@@ -46,14 +46,12 @@ function cracken() {
     outerBlock.className = 'pacmanOuter';
 
     var block = document.createElement('div');
-    
+
     block.className = "pacman";
-    if (block.offsetParent == null) {//костыль
-        block.offsetParent = outerBlock;
-    }
+
 
     outerBlock.appendChild(block);//матрёшкина радость
-    
+
     gameField.appendChild(outerBlock);
 
 
@@ -194,10 +192,12 @@ function randomInteger(min, max) {//капец как неудобненько
     rand = Math.floor(rand);
     return rand;
 }
-var str=null;
+
+var str = null;
+
 function sound8Bit() {//промах
 
-    if (str==null) {
+    if (str == null) {
         var audio = new Audio(); // Создаём новый элемент Audio
         audio.src = 'sound/cracken.mp3'; // Указываем путь к звуку "клика"
         audio.volume = 0.5;
@@ -381,7 +381,7 @@ function createTableResult() {
         //null variables
         moveNow = 'right';
         scoreCounter = 0;
-        str='nomusickMore'
+        str = 'nomusickMore'
         startGame('noBack');//запуск игры без подложки
     }
 
