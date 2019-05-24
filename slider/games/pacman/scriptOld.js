@@ -40,26 +40,21 @@ function run() {
 //тут создают героев
 function cracken() {
 
-    console.log(document.querySelectorAll(".pacmanOuter"));
-
     var outerBlock = document.createElement('div');//рамка для отлова положения героя
     outerBlock.className = 'pacmanOuter';
 
     var block = document.createElement('div');
-    
     block.className = "pacman";
-    if (block.offsetParent == null) {//костыль
-        block.offsetParent = outerBlock;
+    if (block.offsetParent != null) {//костыль
+        block.offsetParent = null;
     }
+    console.dir(block);
 
     outerBlock.appendChild(block);//матрёшкина радость
-    
+
     gameField.appendChild(outerBlock);
-
-
     outerBlock.style.left = 0;
     outerBlock.style.top = 0;
-
     setInterval(function () {//скорость передвижения героя.
         move(outerBlock)
 
@@ -71,7 +66,7 @@ function cracken() {
 function move(gamer) {
 
     omnom(gamer);//жрем еду
-    // }
+
     //пусть колобок побегает
 
     let dx = 3;
@@ -115,6 +110,42 @@ function move(gamer) {
     gamer.style.top = parseInt(gamer.style.top) + dy + "px";
     gamer.style.left = parseInt(gamer.style.left) + dx + "px";
 
+    // if (gamer.offsetRight < gameField.clientWidth - gamer.clientWidth && moveNow == 'right')
+
+    // if (gamer.style.top)
+
+    // if (gamer.offsetLeft < gameField.clientWidth - gamer.clientWidth && moveNow == 'right') {//если граница поля справа и герой смотрит вправо
+    //     gamer.style.left = gamer.offsetLeft + 2 + 'px';
+    //     gamer.style.transform = 'scale(1, 1)';
+
+    //     if (gamer.offsetLeft == gameField.clientWidth - gamer.clientWidth) {//если дошел до граници
+    //         moveNow = 'left';//крутим влево
+
+    //     }
+    // } else if (gamer.offsetLeft > 0 && moveNow == 'left') {
+    //     gamer.style.transform = 'scale(-1, 1)';
+
+
+    //     gamer.style.left = gamer.offsetLeft - 3 + 'px';//чертовщина какая то.
+    //     if (gamer.offsetLeft <= 0) {
+    //         moveNow = 'right';
+
+    //     }
+    // } else if (gamer.offsetTop < gameField.clientHeight - gamer.clientHeight && moveNow == 'down') {
+    //     gamer.style.top = gamer.offsetTop + 2 + 'px';
+    //     gamer.style.transform = 'rotate(90deg)';
+    //     if (gamer.offsetTop >= gameField.clientHeight - gamer.clientHeight) {
+
+    //         moveNow = 'up'
+    //     }
+    // } else if (gamer.offsetTop >= 4 && moveNow == 'up') {
+    //     gamer.style.top = (gamer.offsetTop - 3) + 'px';//чертовщина какая то.
+    //     console.log(gamer.style.top, gamer.offsetTop);
+    //     gamer.style.transform = 'rotate(270deg)';
+    //     if (gamer.offsetTop <= 1) {
+    //         moveNow = 'down'
+    //     }
+    // }
 }
 
 
