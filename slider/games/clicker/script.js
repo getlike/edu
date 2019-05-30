@@ -304,7 +304,7 @@ function endGame() {
 function reloadGame() {//перезапуск игрового поля
     // location.reload();
     removeChildren(gameField);//удаляем с грового поля все к чертям
-    secundsRemaining=5;
+    secundsRemaining=30;
     // noinspection JSAnnotator
     switcher=true;//вернуть шарики
     // removeEventListener(gameField);

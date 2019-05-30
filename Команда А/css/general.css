@@ -1,0 +1,184 @@
+* {
+	margin: 0;
+	overflow: hidden;
+}
+.game_field {
+	width: 100vw;
+	height: 100vh;
+	margin: 0 auto;
+	/*background-image: url('../img/back.png');*/
+	background-size: cover;
+	animation: city 180s linear infinite;/* Vitalii*/
+    -webkit-animation: city 45s linear infinite;/* Vitalii*/
+	position: relative;
+}
+
+@keyframes city {/* Vitalii*/
+    from { background-position: 1537px 100%, 0 0;}
+    to { background-position: 0 100%, 0 0; }
+}
+
+@-webkit-keyframes city {/* Vitalii*/
+    from { background-position: 1537px 100%, 0 0;}
+    to { background-position: 0 100%, 0 0; }
+}
+
+.airplane {
+	position: absolute;
+	top: calc(55% - 100px);
+	transition: all .15s;
+}
+.shot {
+	background: #FF8A00FF;
+	position: absolute;
+	width: 15px;
+	height: 5px;
+	border-radius: 30%;
+	transition: all .05s;
+}
+
+.enemyBlock {
+	width: 50px;
+	height: 50px;
+	background-image: url(../img/plan1.png);
+	background-size: cover;
+	position: absolute;
+}
+
+.enemyBlock2 {
+	width: 50px;
+	height: 50px;
+	background-image: url(../img/plan1.png);
+	background-size: cover;
+	position: absolute;
+}
+
+.score {
+	color: #FFF;
+	font-weight: bold;
+	font-family: 'Gugi', cursive;
+	margin-left: calc(50% - 300px);
+	padding:  10px;
+	position: absolute;
+}
+
+.score h2 {
+	font-size: 25;
+}
+
+.start {
+	width: 400px;
+	height: 400px;
+	background-color: #f0f0f0;
+	border-radius: 20px;
+	border: 2px solid black;
+	margin-left: calc(40% - 20px);
+    margin-top: calc(10% - 20px);
+	opacity: 0.5;
+
+}
+
+.start button {    
+	width: 200px;
+	height: 60px;
+	font-size: 25px;
+	margin-left: calc(50% - 100px);
+	margin-top: calc(50% - 40px);
+	border: 2px solid black;
+	border-radius: 10px;
+	background: black;
+	color: white;
+	outline: none;
+}
+
+#end {  
+	width: 400px;
+	height: 400px;
+	background-color: #f0f0f0;
+	border-radius: 20px;
+	border: 2px solid black;
+	margin-left: calc(40% - 20px);
+    margin-top: calc(10% - 20px);
+	opacity: 0.5;
+}
+
+#end p { 
+	color: #FFF;
+	font-weight: bold;
+	font-family: 'Gugi', cursive;
+	text-align: center;
+	margin: 0px;
+}
+
+#end button { 
+	width: 200px;
+	height: 60px;
+	font-size: 25px;
+	margin-left: calc(50% - 100px);
+	margin-top: calc(50% - 40px);
+	border: 2px solid black;
+	border-radius: 10px;
+	background: black;
+	color: white;
+	outline: none;
+}
+
+#stage {  
+	width: 300px;
+	height: 150px;
+	background-color: #c0cecc;
+	border-radius: 20px;
+	border: 2px #ffffff;
+	margin-left: 500px;
+	margin-top: 190px;
+}
+
+#stage p { 
+	text-align: center;
+	color: black;
+	font-size: 25px;
+	line-height: 1.5em;
+	font-weight: bold;
+	font-style: italic;
+	font-variant: small-caps;
+	font-family: verdana,serif;
+
+}
+
+#stage button { 
+	width: 160px;
+	height: 40px;
+	font-size: 25px;
+	margin-top: 0px;
+	margin-left: 75px;
+	border: 2px solid black;
+	border-radius: 10px;
+	background: white;
+	color: black;
+	outline: none;
+	font-style: italic;
+}
+
+#lifes {   
+	position: absolute;
+	top: 10px;
+	left: calc(50% + 100px);
+	border-radius: 10px;
+	font-size: 25px;
+	color: #fff;
+	outline: none;
+	font-weight: bold;
+	font-family: 'Gugi', cursive;
+	text-align: left;
+
+}
+
+#lifes span { 
+	background-image: url("../img/mig2.png");
+	width: 40px;
+	height: 20px;
+	margin: 5px;
+	display: block;
+	float: right;
+	border-radius: 20px;
+}

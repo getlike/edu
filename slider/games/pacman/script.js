@@ -117,6 +117,7 @@ function move(gamer) {
 
 
 //клавиатура
+
 document.onkeydown = function (e) {//слушаем клавиатуру и крутим героем через переменную
     switch (e.key) {
         case 'ArrowLeft':
