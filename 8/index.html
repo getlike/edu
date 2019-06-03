@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+</head>
+<body>
+
+<div id="app">
+
+    <header>
+        <a href="#" class="logo">
+            <img src="img/logo.png">
+        </a>
+        <div class="nav">
+            <a href="login/index.html">Login</a>
+            <a href="login/index.html">Register</a>
+        </div>
+    </header>
+
+    <div id="main">
+        <div id="left-sidebar">
+
+            <ul id="user-list"></ul>
+        </div>
+        <div id="right-sidebar">
+            <div class="writer"></div>
+            <input type="text" class="text-type">
+        </div>
+
+        <div id="content"></div>
+
+        <div class="clearfix"></div>
+    </div>
+    <div class="buttons">
+        <a href="#">invite</a>
+        <a href="#" id ='sender'>send</a>
+    </div>
+    <!--окно поиска-->
+    <input type="text"  class="find-user">
+    <!--переключалка-->
+    <div class="pretty p-icon p-jelly p-round p-bigger">
+        <input type="checkbox" class="check-master"/>
+        <div class="state p-info">
+            <i class="icon material-icons">done</i>
+            <label id="label-check">люди</label>
+        </div>
+    </div>
+    </div>
+
+
+<div id="openModal" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

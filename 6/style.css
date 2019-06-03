@@ -104,6 +104,11 @@ Content
 	height: 100%;
 
 }
+#right-sidebar h2{
+	background: #cde2cd;
+/* border: 1px solid; */
+	width: 90%;
+}
 .some{
 
 }
