@@ -39,8 +39,7 @@ checkMaster.checked = true;
 checkMaster.onclick = function () {
     if (checkMaster.checked) {
         checkLabel.innerText = 'люди';
-    }
-    else {
+    } else {
         checkLabel.innerText = 'сообщения.';
 
     }
@@ -54,7 +53,7 @@ var uXmlRecMessage = new XMLHttpRequest();
 uXmlRecMessage.open('GET', 'http://at.educoin.biz/chat-api/?entity=messages&count=500', false);
 uXmlRecMessage.send();
 var messageXml = JSON.parse(uXmlRecMessage.response);
-console.dir(messageXml);
+// console.dir(messageXml);
 
 //выводим сообщения
 writeMessages(messageXml);
@@ -141,18 +140,22 @@ finder.onkeydown = function (e) {
             userContainer.removeChild(userContainer.lastChild);
             firstWrite();
         }
+        if (!checkMaster.checked){
+            removeChildren(textArea);
+            writeMessages(messageXml);
+            return;
+        }
     }
     if (checkMaster.checked) {
         checkStrName(textFind);
 
-    }
-    else {
+    } else {
         checkStrMessage(textFind);
     }
 
 };
-var someText = document.createElement('div');
-someText.className = 'some';
+// var someText = document.createElement('div');
+// someText.className = 'some';
 
 //проверяем пользователей
 function checkStrName(str) {
@@ -175,31 +178,46 @@ function checkStrMessage(str) {
         var strAr = message[i].message;
         if (lowerStr === strAr.toLowerCase()) {
             console.log('check')
-            someText.innerText = '';
+            writeMessages(messageXml.messages[i])
         }
     }
 }
 
-var someText = document.createElement('div');
-someText.className = 'some';
+// var someText = document.createElement('div');
+// someText.className = 'some';
+
 //рисуем сообщения
 function writeMessages(messageXml) {
-    console.dir(messageXml);
-////todo функция чтения сообщений и их вывода
-    for (var i = 0; i < messageXml.messages.length; i++) {
-        //var user = document.createElement('li');
-        var textM = messageXml.messages[i].message;
-        var textN = messageXml.messages[i].username;
+    if (Array.isArray(messageXml.messages)) {
+        for (var i = 0; i < messageXml.messages.length; i++) {
+            var textM = messageXml.messages[i].message;
+            var textN = messageXml.messages[i].username;
+            var someText = document.createElement('div');
+            someText.className = 'some';
+            someText.innerHTML = '<h2> ava : ' + textN + ': ' + textM + '</h2>';
+            textArea.insertBefore(someText, textArea.children[0]);
+        }
+    }
+    else {
+        removeChildren( textArea);
+        console.dir(messageXml);
+        var textM = messageXml.message;
+        var textN = messageXml.username;
         var someText = document.createElement('div');
         someText.className = 'some';
 
         someText.innerHTML = '<h2> ava : ' + textN + ': ' + textM + '</h2>';
         textArea.insertBefore(someText, textArea.children[0]);
-
     }
 
 }
 
+function removeChildren(elem) {
+    while (elem.lastChild) {
+        elem.removeChild(elem.lastChild);
+
+    }
+}
 
 /*
 Выполни следующие задачи:

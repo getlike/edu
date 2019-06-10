@@ -1,0 +1,66 @@
+* {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+body {
+	background: url(../img/sketch.jpg) no-repeat;
+}
+
+header {
+	margin: 0 auto;
+	/*background: yellow;*/
+	width: 70vw;
+	height: 15vh;
+	border: 1px solid blue;
+}
+header .logo_img img {
+	float: left;
+	margin-top: 35px;
+	margin-left: 25px;
+}
+.nav {
+	float: right;
+	margin-top: 35px;
+}
+.nav a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 25px;
+	margin: 0 35px 0 20px;
+	color: #fff;
+}
+.nav a:hover {
+	color: yellow;
+}
+.main_text {
+	border: 1px solid blue;
+	margin: 0 auto;
+	width: 70vw;
+	height: 82vh;
+}
+.left {
+	width: 30%;
+	height: 100%;
+	float: left;
+	border: 1px solid blue;
+}
+.right {
+	float: right;
+	width: 70%;
+	background: #ffc0cb;
+	height: 100%;
+}
+
+footer {
+	border: 1px solid blue;
+	height: 3vh;
+	/*background: green;*/
+	margin: 0 auto;
+	width: 70vw;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */

@@ -1,0 +1,85 @@
+/*.form-row{*/
+/*margin-bottom: 8px;*/
+/*overflow: hidden;*/
+/*height: 30px;*/
+/*}*/
+/*.form-row input{*/
+/*float:right;*/
+/*height: 19px;*/
+/*line-height: 19px;*/
+/*padding: 8px 5px;*/
+/*width: 287px;*/
+/*border: 1px solid black;*/
+/*}*/
+/*.reg-form{*/
+/*width: 416px;*/
+/*margin: 0 auto;*/
+/*}*/
+/*h1 {text-align: center}*/
+
+
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 150px;
+
+}
+
+.midle {
+    background: #888888;
+    padding: 20px;
+    width: 100%;
+}
+
+.center {
+    width: 300px;
+    height: 500px;
+    border: 2px solid red;
+    background: #94C2ED;
+    border-radius: 20px;
+    margin-left: 33%;
+}
+
+.center h2 {
+    /*position: absolute;*/
+    left: 50%;
+}
+.center p{
+    margin-left: 10px;
+}
+.center button{
+    float: right;
+    margin-right: 49px;
+}
+/*input {*/
+
+    /*margin-left: 50px;*/
+    /*padding: 18px;*/
+/*}*/
+
+button {
+    margin: 50px;
+    margin-left: 50px;
+}
+table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 5px;
+    background: #ECE9E0;
+    color: #656665;
+    border: 16px solid #ECE9E0;
+    border-radius: 20px;
+}
+table button{
+    margin: 0;
+    margin-left: 0;
+}
+th {
+    font-size: 18px;
+    padding: 10px;
+}
+td {
+    background: #F5D7BF;
+    padding: 10px;
+}
