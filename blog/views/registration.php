@@ -22,6 +22,9 @@
 			<input type="password" id="form_password" name="password">
 		</div>
 		<input type="submit" value="Registration">
+		<a href="log.html">
+			already have an account?
+		</a>
 	</form>
 
 </body>

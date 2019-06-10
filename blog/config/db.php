@@ -110,15 +110,13 @@ function readUserMessage($tablename)
                 'rate' => $row['rate']));
         }
         return $list;
-//        echo '<pre>';
-//        print_r($list);
+
     }
     connect()->close();//от греха подальше
 }
 
 
-//update
-//delete
+
 function deleteUserMesage($tablename,$id){
     if ($tablename=='message'){
         $sql = 'DELETE FROM '. $tablename.' WHERE `message`.`id` = '.$id ;
@@ -133,3 +131,6 @@ function deleteUserMesage($tablename,$id){
     connect()->close();
 }
 
+/*
+Пишите код так, как будто сопровождать его будет склонный к насилию психопат, который знает, где вы живёте
+*/

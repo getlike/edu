@@ -13,17 +13,21 @@
 				<img src="img/icon.png">
 			</a>
 			<div class="nav">
-				<a href="log.html">Login</a>
-				<a href="rega.html">Registration</a>
+				<a href="views/registration.php "><img src="img/icons/icon_user.svg" alt=""></a>
 			</div>
 		</header>
 		<div class="main_text">
-			<div class="left"></div>
-			<div class="right"></div>
-			<div class="clearfix"></div>
+			<div class="left" >
+				<div class="search_left">
+					<img src="img/icons/icon_search.svg" alt=""><input type="search" placeholder="Search">
+				</div>
+			</div>
+			<div class="right">
+				<input type="text" value="text">
+			</div>
 		</div>
 
-		<footer></footer>
+		<footer>team B</footer>
 	</div>
 
 </body>

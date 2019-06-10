@@ -4,63 +4,75 @@
 	overflow: hidden;
 }
 body {
-	background: url(../img/sketch.jpg) no-repeat;
+	background: url(../img/sketch.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
 
 header {
+	display: flex;
+	justify-content: space-between;
 	margin: 0 auto;
-	/*background: yellow;*/
-	width: 70vw;
-	height: 15vh;
+	width: 85vw;
+	height: 10vh;
 	border: 1px solid blue;
 }
 header .logo_img img {
-	float: left;
-	margin-top: 35px;
+	margin-top: 15px;
 	margin-left: 25px;
 }
+
 .nav {
-	float: right;
-	margin-top: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.nav a {
-	text-transform: uppercase;
-	text-decoration: none;
-	font-size: 25px;
-	margin: 0 35px 0 20px;
-	color: #fff;
-}
-.nav a:hover {
-	color: yellow;
+.nav img {
+	height: 35px;
+    padding-right: 25px;
 }
 .main_text {
+	display: flex;
 	border: 1px solid blue;
 	margin: 0 auto;
-	width: 70vw;
-	height: 82vh;
+	width: 85vw;
+	height: 86vh;
 }
+
 .left {
 	width: 30%;
 	height: 100%;
 	float: left;
 	border: 1px solid blue;
+	overflow: overlay;
+}
+.search_left {
+	display: flex;
+	margin-top: 5px;
+	justify-content: center;
+}
+.search_left input {
+	height: 25px;
+	width: 80%;
+	border-radius: 2px;
+	border: none;
+	border-bottom: 1px solid white;
+	outline: none;
+	background: none;
+	color: white;
 }
 .right {
-	float: right;
 	width: 70%;
-	background: #ffc0cb;
 	height: 100%;
 }
 
 footer {
 	border: 1px solid blue;
 	height: 3vh;
-	/*background: green;*/
 	margin: 0 auto;
-	width: 70vw;
+	width: 85vw;
+	color: white;
 }
-.clearfix { display: inline-block; }
-/* start commented backslash hack \*/
-* html .clearfix { height: 1%; }
-.clearfix { display: block; }
-/* close commented backslash hack */
+
+/*@media only screen and (max-width: 600px) {
+	
+}*/

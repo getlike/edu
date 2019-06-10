@@ -3,10 +3,8 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Fira Sans', sans-serif;
-	background-image: url(../img/sketch.jpg);
-	-webkit-background-size: 100%;
-	     -o-background-size: 100%;
-	        background-size: 100%;
+	background: url(../img/sketch.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
 .box {
 	width: 300px;

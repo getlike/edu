@@ -6,8 +6,7 @@ $name=$_POST['first_name'];
 $email=$_POST['email'];
 $password=$_POST['password'];
 createUserMessage('users',$arr=['username'=>$name,'email'=>$email,'password'=>$password]);
-echo '<pre>';
-    var_dump($_POST);
+//вернуть пользователя с куками если соединение прошло удачно
 
 
 ?>

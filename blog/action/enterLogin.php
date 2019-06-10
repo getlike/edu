@@ -13,15 +13,16 @@ foreach ($list as $value) {
        if($value['username']==$username){
            if ($value['password']==$password){
                echo 'connected ';
+               //вернуть пользователя с куками если соединение прошло удачно
            }
            else{
                echo 'password is wrong';
            }
            //echo 'findUser <b>'.$username.'</b> with id '.$value['id'].'<hr>';
        }
-//       elseif{
-//           echo 'login is epsent';
-//       }
+       else{
+           echo 'нету такого пользователя или что то пошло не так';
+       }
 
 }
 
