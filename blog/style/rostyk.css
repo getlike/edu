@@ -1,3 +1,4 @@
+/*ну что за название ёпт....*/
 * {
 	margin: 0;
 	padding: 0;
@@ -43,7 +44,7 @@ header .logo_img img {
 	height: 100%;
 	float: left;
 	border: 1px solid blue;
-	overflow: overlay;
+	/*overflow: overlay; чет тут не то*/
 }
 .search_left {
 	display: flex;
@@ -63,6 +64,8 @@ header .logo_img img {
 .right {
 	width: 70%;
 	height: 100%;
+	/*ползунок*/
+	overflow-y: scroll;
 }
 
 footer {
@@ -72,7 +75,25 @@ footer {
 	width: 85vw;
 	color: white;
 }
+/*бокс с сообщением*/
+.message{
+background: rgba(238, 236, 236, 0.4);
+	margin: 5px;
+	border-radius: 5px;
 
+	/*border: 2px solid green;*/
+}
+/*картинка в сообщении*/
+	.message img{
+		width: 150px;
+		margin:15px;
+		border-radius: 10px;
+		box-shadow: 10px 10px rgba(0,0,0,0.25);
+
+	}
+	.message span{
+		margin: 7px;
+	}
 /*@media only screen and (max-width: 600px) {
 	
 }*/

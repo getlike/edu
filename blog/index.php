@@ -13,7 +13,7 @@
 				<img src="img/icon.png">
 			</a>
 			<div class="nav">
-				<a href="views/registration.php "><img src="img/icons/icon_user.svg" alt=""></a>
+				<a href="views/login.php "><img src="img/icons/icon_user.svg" alt=""></a>
 			</div>
 		</header>
 		<div class="main_text">
@@ -24,6 +24,31 @@
 			</div>
 			<div class="right">
 				<input type="text" value="text">
+                <?php
+                //прочитать сообщения из бд через /action/readMessage.php
+                //todo поместить в масив(?) и заполнить страницу по самое помидоро
+
+                include 'config/db.php';
+                $arrMessage=readUserMessage('message');
+             /*
+
+)*/
+             foreach ($arrMessage as $value){
+                 echo '<div class="message">'.
+                     '<h1>Заголовок</h1>'.
+                     '<hr>'.
+                     '<img src="'.$value['picture'].'" alt="" id="pictMess" align="left">'.
+                     '<p>'.$value['message'] . '<br>'.'</p>'.
+                     $value['datatime'];
+//                     echo $value['message'] . '<br>';
+                     echo '</div>';
+                     //todo куда засунуть автора?
+//
+             }
+                ?>
+
+
+                </div>
 			</div>
 		</div>
 

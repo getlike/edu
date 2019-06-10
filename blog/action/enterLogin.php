@@ -12,17 +12,19 @@ $list = (readUserMessage('users'));
 foreach ($list as $value) {
        if($value['username']==$username){
            if ($value['password']==$password){
-               echo 'connected ';
+//               echo 'connected ';
                //вернуть пользователя с куками если соединение прошло удачно
+               setcookie('userLogin',$username,time()+3600,"/");
+               header('Location: /');
            }
            else{
                echo 'password is wrong';
            }
            //echo 'findUser <b>'.$username.'</b> with id '.$value['id'].'<hr>';
        }
-       else{
-           echo 'нету такого пользователя или что то пошло не так';
-       }
+//       else{
+//           echo 'нету такого пользователя или что то пошло не так';
+//       }
 
 }
 

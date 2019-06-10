@@ -22,9 +22,10 @@
 			<input type="password" id="form_password" name="password">
 		</div>
 		<input type="submit" value="Registration">
-		<a href="log.html">
-			already have an account?
-		</a>
+        <a href="login.php">
+            <h3>вернуться на страницу входа</h3>
+        </a>
+
 	</form>
 
 </body>

@@ -68,6 +68,7 @@ function createUserMessage($tablename, $arr = [//todo проверку ввод�
         $sql = 'INSERT INTO ' . $tablename . "( username, email,password) VALUES ('" . $arr['username'] .  "','" . $arr['email'] . "','" . $arr['password'] . "');";
 
         connect()->query($sql);
+
     }
     elseif ($tablename=='message'){
         $sql = 'INSERT INTO ' . $tablename . "( userId, message,datatime,picture,rate) VALUES ('" . $arr['userId'] . "','" . $arr['message'] . "','" . $arr['datatime'] . "','" . $arr['picture'] . "','" . $arr['rate'] . "');";
@@ -98,7 +99,7 @@ function readUserMessage($tablename)
         return $list;
     } elseif ($tablename == 'message') {
 //echo $result;
-        echo $sql;
+        //echo $sql;
         while ($row = $result->fetch_assoc()) {//прочитали message
             //echo $row['username'].'<hr>'. $row['id'];
             array_push($list, array(

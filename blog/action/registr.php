@@ -5,9 +5,11 @@ include '../config/db.php';
 $name=$_POST['first_name'];
 $email=$_POST['email'];
 $password=$_POST['password'];
-createUserMessage('users',$arr=['username'=>$name,'email'=>$email,'password'=>$password]);
+$req =createUserMessage('users',$arr=['username'=>$name,'email'=>$email,'password'=>$password]);
 //вернуть пользователя с куками если соединение прошло удачно
-
+if (req){
+    header('Location: /views/login.php');
+}
 
 ?>
 
