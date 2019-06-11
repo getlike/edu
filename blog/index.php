@@ -25,8 +25,8 @@
 			<div class="right">
 				<input type="text" value="text">
                 <?php
-                //прочитать сообщения из бд через /action/readMessage.php
-                //todo поместить в масив(?) и заполнить страницу по самое помидоро
+                //прочитать сообщения из бд через напрямую через bd.php
+                //заполнять по мере чтения из бд
 
                 include 'config/db.php';
                 $arrMessage=readUserMessage('message');
@@ -34,7 +34,7 @@
 
 )*/
              foreach ($arrMessage as $value){
-
+                 '<h1>'.$value['hea'].'</h1>';
 
                  echo '<div class="message">'.
                      '<h1>'.$value['head'].'</h1>'.

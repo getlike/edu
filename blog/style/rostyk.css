@@ -77,22 +77,25 @@ footer {
 }
 /*бокс с сообщением*/
 .message{
-background: rgba(238, 236, 236, 0.4);
+background: rgba(112, 158, 152, 0.48);
 	margin: 5px;
-	border-radius: 5px;
-
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
 	/*border: 2px solid green;*/
 }
 /*картинка в сообщении*/
 	.message img{
 		width: 150px;
 		margin:15px;
-		border-radius: 10px;
+		border-top-left-radius: 10px;
+		border-bottom-right-radius: 10px;
 		box-shadow: 10px 10px rgba(0,0,0,0.25);
 
 	}
-	.message span{
-		margin: 7px;
+	.message p{
+		font-size: 24px;
+		color: white;
+		font-family: monospace;
 	}
 /*@media only screen and (max-width: 600px) {
 	

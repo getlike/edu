@@ -16,7 +16,7 @@ body.appendChild(div);
 
 	var a = document.createElement("a");
 		a.className = "button";
-		a.href = "../html/page_2.html";
+		a.href = "index.php";
 		a.value = "let begin";
 		a.innerText = "Go to Blog";
 	div.appendChild(a);
