@@ -40,6 +40,7 @@ echo $_COOKIE["userLogin"];
             echo '<div class="message">' .
                 '<h1>' . $value['head'] . '</h1>' .
                 '<hr>' .
+                $value['username'].'<hr>'.
                 '<img src="' . $value['picture'] . '" alt="" id="pictMess" align="left">' .
                 '<p>' . $value['message'] . '<br>' . '</p>' .
                 $value['datatime'];

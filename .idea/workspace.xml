@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4fb836b4-4023-4097-b96b-2662253e39a5" name="Default Changelist" comment="Default Changelist&#10;выбрасываем статтьи&#10;добавил заголовок&#10;переместил html&#10;включил в проект js&#10;работа с 404 и со стилями&#10;&#10;получили куки и проверили в js&#10;personalCabinet">
+      <change beforePath="$PROJECT_DIR$/blog/style/loginstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/style/loginstyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/style/regastyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/style/regastyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/style/rostyk.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/style/rostyk.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/views/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/views/personalCabinet.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/personalCabinet.php" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.38659486">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/blog/views/registration.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="527">
+                  <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/blog/views/index.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="102">
+                  <caret line="6" column="97" selection-start-line="6" selection-start-column="97" selection-end-line="6" selection-end-column="97" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/blog/style/rostyk.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="694">
+                  <caret line="95" column="39" selection-start-line="95" selection-start-column="39" selection-end-line="95" selection-end-column="39" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/blog/config/db.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-238">
+                  <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/blog/style/personalCabinet.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="187">
+                  <caret line="11" selection-start-line="11" selection-end-line="11" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/blog/.htaccess">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/blog/page_1.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="365">
+                  <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/blog/views/personalCabinet.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="527">
+                  <caret line="43" column="91" selection-start-line="43" selection-start-column="91" selection-end-line="43" selection-end-column="91" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/blog/action/enterLogin.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="527">
+                  <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>addContact</find>
+      <find>add</find>
+      <find>checkStr</find>
+      <find>onck</find>
+      <find>grrg</find>
+      <find>fin</find>
+      <find>someText</find>
+      <find>chil</find>
+      <find>be</find>
+      <find>addUser</find>
+      <find>writeMessages</find>
+      <find>user_id</find>
+      <find>messageListBlock</find>
+      <find>scro</find>
+      <find>off</find>
+      <find>spa</find>
+      <find>log</find>
+      <find>db</find>
+      <find>but</find>
+      <find>?</find>
+      <find>conn</find>
+      <find>doc</find>
+      <find>print</find>
+      <find>echo</find>
+      <find>text</find>
+      <find>message</find>
+      <find>righ</find>
+      <find>img</find>
+      <find>src</find>
+      <find>mess</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/9/js/views/test.js" />
+        <option value="$PROJECT_DIR$/9/js/messages.js" />
+        <option value="$PROJECT_DIR$/9/js/views/register.html" />
+        <option value="$PROJECT_DIR$/9/js/user.js" />
+        <option value="$PROJECT_DIR$/9/style.css" />
+        <option value="$PROJECT_DIR$/9/index.html" />
+        <option value="$PROJECT_DIR$/9/views/main.css" />
+        <option value="$PROJECT_DIR$/9/views/login.html" />
+        <option value="$PROJECT_DIR$/9/views/register.html" />
+        <option value="$PROJECT_DIR$/10home/index.html" />
+        <option value="$PROJECT_DIR$/10home/php/index.php" />
+        <option value="$PROJECT_DIR$/10home/php/safemysql.class.php" />
+        <option value="$PROJECT_DIR$/10home/views/register.html" />
+        <option value="$PROJECT_DIR$/10home/js/user.js" />
+        <option value="$PROJECT_DIR$/10home/style.css" />
+        <option value="$PROJECT_DIR$/10home/js/script.js" />
+        <option value="$PROJECT_DIR$/10home/views/regiter.php" />
+        <option value="$PROJECT_DIR$/10home/index.php" />
+        <option value="$PROJECT_DIR$/10home/views/main.css" />
+        <option value="$PROJECT_DIR$/10home/php/deleted.php" />
+        <option value="$PROJECT_DIR$/10home/views/admin.php" />
+        <option value="$PROJECT_DIR$/chat/client/views/index.html" />
+        <option value="$PROJECT_DIR$/chat/server/server.js" />
+        <option value="$PROJECT_DIR$/chat/client/public/js/auth.js" />
+        <option value="$PROJECT_DIR$/chat_chapter_two/client/index.html" />
+        <option value="$PROJECT_DIR$/chat_chapter_two/server/server.js" />
+        <option value="$PROJECT_DIR$/10home/php/db.php" />
+        <option value="$PROJECT_DIR$/blog/db.php" />
+        <option value="$PROJECT_DIR$/blog/registration.php" />
+        <option value="$PROJECT_DIR$/blog/config/writeMessage.php" />
+        <option value="$PROJECT_DIR$/blog/config/registr.php" />
+        <option value="$PROJECT_DIR$/blog/action/writeMessage.php" />
+        <option value="$PROJECT_DIR$/blog/action/registr.php" />
+        <option value="$PROJECT_DIR$/blog/views/login.php" />
+        <option value="$PROJECT_DIR$/blog/views/registration.php" />
+        <option value="$PROJECT_DIR$/blog/action/readMessage.php" />
+        <option value="$PROJECT_DIR$/blog/config/db.php" />
+        <option value="$PROJECT_DIR$/blog/page_1.html" />
+        <option value="$PROJECT_DIR$/blog/errors/error500.php" />
+        <option value="$PROJECT_DIR$/blog/error404.html" />
+        <option value="$PROJECT_DIR$/blog/errors/error500.htm" />
+        <option value="$PROJECT_DIR$/blog/index.php" />
+        <option value="$PROJECT_DIR$/blog/errors/filenotfound.html" />
+        <option value="$PROJECT_DIR$/blog/page_1.js" />
+        <option value="$PROJECT_DIR$/blog/views/pCabinet.php" />
+        <option value="$PROJECT_DIR$/blog/action/enterLogin.php" />
+        <option value="$PROJECT_DIR$/blog/style/personalCabinet.css" />
+        <option value="$PROJECT_DIR$/blog/.htaccess" />
+        <option value="$PROJECT_DIR$/blog/views/personalCabinet.php" />
+        <option value="$PROJECT_DIR$/blog/views/index.php" />
+        <option value="$PROJECT_DIR$/blog/style/rostyk.css" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="960" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="edu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="action" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="icons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="style" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="jsx.switch.disabled" value="true" />
+    <property name="last_opened_file_path" value="C:/OSPanel/modules/php/PHP_7.3/php.exe" />
+    <property name="node.js.detected.package.prettier" value="true" />
+    <property name="node.js.path.for.package.prettier" value="project" />
+    <property name="node.js.selected.package.prettier" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Greenfly\Dropbox\edu\chat\server" />
+      <recent name="G:\Dropbox\edu\chat\server" />
+      <recent name="C:\Users\Greenfly\Dropbox\edu\pacman\sound" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Dropbox\edu\blog\views" />
+      <recent name="G:\Dropbox\edu\blog\errors" />
+      <recent name="G:\Dropbox\edu\blog" />
+      <recent name="G:\Dropbox\edu\blog\action" />
+      <recent name="G:\Dropbox\edu\blog\config" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.page_1.html">
+    <configuration name="index.html (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/edu/8/index.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html (3)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/edu/9/index.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="page_1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/edu/blog/page_1.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="server" type="NodeJSConfigurationType" path-to-js-file="chat/server/server.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="server.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="server.js" working-dir="$PROJECT_DIR$/chat_chapter_two/server">
+      <method v="2" />
+    </configuration>
+    <configuration name="db.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/10home/php/db.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="registration.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/blog/views/registration.php">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.index.html (2)" />
+      <item itemvalue="JavaScript Debug.index.html (3)" />
+      <item itemvalue="JavaScript Debug.page_1.html" />
+      <item itemvalue="Node.js.server" />
+      <item itemvalue="Node.js.server.js" />
+      <item itemvalue="PHP Script.db.php" />
+      <item itemvalue="PHP Script.registration.php" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.page_1.html" />
+        <item itemvalue="PHP Script.registration.php" />
+        <item itemvalue="PHP Script.db.php" />
+        <item itemvalue="JavaScript Debug.index.html (3)" />
+        <item itemvalue="JavaScript Debug.index.html (2)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4fb836b4-4023-4097-b96b-2662253e39a5" name="Default Changelist" comment="" />
+      <created>1558465365416</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1558465365416</updated>
+      <workItem from="1558465366932" duration="1671000" />
+      <workItem from="1558503003336" duration="9433000" />
+      <workItem from="1558515551485" duration="17559000" />
+      <workItem from="1558536942914" duration="19547000" />
+      <workItem from="1558588430855" duration="8406000" />
+      <workItem from="1558609982611" duration="6782000" />
+      <workItem from="1558637900567" duration="8041000" />
+      <workItem from="1558675262437" duration="8254000" />
+      <workItem from="1558687670408" duration="266000" />
+      <workItem from="1558692288585" duration="3290000" />
+      <workItem from="1558722443729" duration="7791000" />
+      <workItem from="1558935528158" duration="2550000" />
+      <workItem from="1559109915778" duration="121000" />
+      <workItem from="1559194382912" duration="14124000" />
+      <workItem from="1559239071368" duration="12803000" />
+      <workItem from="1559285053782" duration="12875000" />
+      <workItem from="1559309455573" duration="1841000" />
+      <workItem from="1559315837740" duration="10149000" />
+      <workItem from="1559490977722" duration="2266000" />
+      <workItem from="1559538078604" duration="1037000" />
+      <workItem from="1559546872125" duration="17185000" />
+      <workItem from="1559572060932" duration="4987000" />
+      <workItem from="1559642894697" duration="8237000" />
+      <workItem from="1559668761453" duration="8646000" />
+      <workItem from="1559712237257" duration="9445000" />
+      <workItem from="1559743011187" duration="1177000" />
+      <workItem from="1559799770137" duration="1361000" />
+      <workItem from="1559819420831" duration="4071000" />
+      <workItem from="1559850719553" duration="737000" />
+      <workItem from="1559851841466" duration="4334000" />
+      <workItem from="1559886579231" duration="9592000" />
+      <workItem from="1559903338058" duration="12545000" />
+      <workItem from="1559920021880" duration="3097000" />
+      <workItem from="1559992412368" duration="5543000" />
+      <workItem from="1560005401642" duration="272000" />
+      <workItem from="1560015868448" duration="623000" />
+      <workItem from="1560094182578" duration="8232000" />
+      <workItem from="1560143641112" duration="13302000" />
+      <workItem from="1560182568424" duration="1969000" />
+      <workItem from="1560190873234" duration="1145000" />
+      <workItem from="1560194429603" duration="819000" />
+      <workItem from="1560195279447" duration="6157000" />
+      <workItem from="1560234582994" duration="2573000" />
+      <workItem from="1560237187433" duration="6755000" />
+      <workItem from="1560272388977" duration="7753000" />
+    </task>
+    <task id="LOCAL-00001" summary="Default Changelist&#10;Сашка поправил move()">
+      <created>1558692999009</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1558692999009</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Default Changelist&#10;Сашка поправил move()">
+      <created>1558701028556</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1558701028556</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Default Changelist&#10;Сашка поправил move()">
+      <created>1559210778468</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1559210778468</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Default Changelist&#10;Сашка поправил move()">
+      <created>1559565871638</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1559565871638</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Default Changelist&#10;Сашка поправил move()&#10;&#10;добавлены проекты blog как основной">
+      <created>1560168853371</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1560168853371</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Default Changelist&#10;Сашка поправил move()&#10;&#10;добавлены проекты blog как основной&#10;правим блог">
+      <created>1560191419657</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1560191419657</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Default Changelist&#10;Сашка поправил move()&#10;&#10;добавлены проекты blog как основной&#10;правим блог&#10;выгрузка сообщений из бд">
+      <created>1560202493623</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1560202493623</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Default Changelist&#10;выбрасываем статтьи">
+      <created>1560234777403</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1560234777403</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Default Changelist&#10;выбрасываем статтьи&#10;добавил заголовок">
+      <created>1560236072093</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1560236072093</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Default Changelist&#10;выбрасываем статтьи&#10;добавил заголовок&#10;переместил html">
+      <created>1560236355418</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1560236355418</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Default Changelist&#10;выбрасываем статтьи&#10;добавил заголовок&#10;переместил html&#10;включил в проект js">
+      <created>1560236403427</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1560236403427</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Default Changelist&#10;выбрасываем статтьи&#10;добавил заголовок&#10;переместил html&#10;включил в проект js&#10;работа с 404 и со стилями">
+      <created>1560240014368</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1560240014369</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Default Changelist&#10;выбрасываем статтьи&#10;добавил заголовок&#10;переместил html&#10;включил в проект js&#10;работа с 404 и со стилями">
+      <created>1560240643093</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1560240643093</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Default Changelist&#10;выбрасываем статтьи&#10;добавил заголовок&#10;переместил html&#10;включил в проект js&#10;работа с 404 и со стилями&#10;&#10;получили куки и проверили в js">
+      <created>1560242402652</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1560242402652</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Default Changelist&#10;выбрасываем статтьи&#10;добавил заголовок&#10;переместил html&#10;включил в проект js&#10;работа с 404 и со стилями&#10;&#10;получили куки и проверили в js&#10;personalCabinet">
+      <created>1560273369245</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1560273369245</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Default Changelist&#10;выбрасываем статтьи&#10;добавил заголовок&#10;переместил html&#10;включил в проект js&#10;работа с 404 и со стилями&#10;&#10;получили куки и проверили в js&#10;personalCabinet">
+      <created>1560275588575</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1560275588575</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Default Changelist&#10;выбрасываем статтьи&#10;добавил заголовок&#10;переместил html&#10;включил в проект js&#10;работа с 404 и со стилями&#10;&#10;получили куки и проверили в js&#10;personalCabinet">
+      <created>1560277905759</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1560277905759</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="292156000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.45895523" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.13501143" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33044422" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.22222222" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.24509804" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32843137" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Default Changelist&#10;Сашка поправил move()" />
+    <MESSAGE value="Default Changelist&#10;Сашка поправил move()&#10;&#10;добавлены проекты blog как основной" />
+    <MESSAGE value="Default Changelist&#10;Сашка поправил move()&#10;&#10;добавлены проекты blog как основной&#10;правим блог" />
+    <MESSAGE value="Default Changelist&#10;Сашка поправил move()&#10;&#10;добавлены проекты blog как основной&#10;правим блог&#10;выгрузка сообщений из бд" />
+    <MESSAGE value="Default Changelist&#10;выбрасываем статтьи" />
+    <MESSAGE value="Default Changelist&#10;выбрасываем статтьи&#10;добавил заголовок" />
+    <MESSAGE value="Default Changelist&#10;выбрасываем статтьи&#10;добавил заголовок&#10;переместил html" />
+    <MESSAGE value="Default Changelist&#10;выбрасываем статтьи&#10;добавил заголовок&#10;переместил html&#10;включил в проект js" />
+    <MESSAGE value="Default Changelist&#10;выбрасываем статтьи&#10;добавил заголовок&#10;переместил html&#10;включил в проект js&#10;работа с 404 и со стилями" />
+    <MESSAGE value="Default Changelist&#10;выбрасываем статтьи&#10;добавил заголовок&#10;переместил html&#10;включил в проект js&#10;работа с 404 и со стилями&#10;&#10;получили куки и проверили в js" />
+    <MESSAGE value="Default Changelist&#10;выбрасываем статтьи&#10;добавил заголовок&#10;переместил html&#10;включил в проект js&#10;работа с 404 и со стилями&#10;&#10;получили куки и проверили в js&#10;personalCabinet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Default Changelist&#10;выбрасываем статтьи&#10;добавил заголовок&#10;переместил html&#10;включил в проект js&#10;работа с 404 и со стилями&#10;&#10;получили куки и проверили в js&#10;personalCabinet" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/slider/games/clicker/script.js</url>
+          <line>43</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/slider/games/clicker/script.js</url>
+          <line>50</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Команда А/js/main.js</url>
+          <line>69</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/8/script.js</url>
+          <line>142</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/9/js/user.js</url>
+          <line>40</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/9/js/user.js</url>
+          <line>5</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/chat_chapter_two/server/server.js</url>
+          <line>7</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/chat_chapter_two/server/server.js</url>
+          <line>8</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/chat_chapter_two/server/server.js</url>
+          <line>13</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/blog/page_1.js</url>
+          <line>10</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/blog/config/db.php</url>
+          <line>69</line>
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/9/views/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10home/index.html" />
+    <entry file="file://$PROJECT_DIR$/10home/php/safemysql.class.php" />
+    <entry file="file://$PROJECT_DIR$/10home/tech">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10home/127_0_0_1.sql" />
+    <entry file="file://$PROJECT_DIR$/10home/views/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10home/views/regiter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10home/views/login.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10home/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10home/views/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="74" column="14" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10home/js/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="79" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10home/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="106" column="23" lean-forward="true" selection-start-line="106" selection-start-column="23" selection-end-line="106" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/9Online/php/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="5" selection-start-column="6" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10home/php/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10home/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="766">
+          <caret line="81" column="7" selection-start-line="81" selection-start-column="7" selection-end-line="81" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/9Online/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10home/php/deleted.php" />
+    <entry file="file://$PROJECT_DIR$/chat/client/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/server/client/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/client/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="83" lean-forward="true" selection-start-line="18" selection-start-column="83" selection-end-line="18" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="29" lean-forward="true" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/client/public/js/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="42" column="10" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="42" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat_chapter_two/package.json" />
+    <entry file="file://$PROJECT_DIR$/chat_chapter_two/node_modules/express/lib/response.js" />
+    <entry file="file://$PROJECT_DIR$/chat_chapter_two/client/index.html" />
+    <entry file="file://$PROJECT_DIR$/chat_chapter_two/node_modules/nunjucks/src/lib.js" />
+    <entry file="file://$PROJECT_DIR$/chat_chapter_two/node_modules/nunjucks/index.js" />
+    <entry file="file://$PROJECT_DIR$/chat_chapter_two/node_modules/nunjucks/src/node-loaders.js" />
+    <entry file="file://$PROJECT_DIR$/chat_chapter_two/server/server.js" />
+    <entry file="file://$PROJECT_DIR$/blog/log.html" />
+    <entry file="file://$PROJECT_DIR$/10home/php/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="62" column="46" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/action/registr.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/action/writeMessage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/errors/error404.html" />
+    <entry file="file://$PROJECT_DIR$/blog/errors/error500.htm" />
+    <entry file="file://$PROJECT_DIR$/blog/errors/PHP_errors.log" />
+    <entry file="file://$PROJECT_DIR$/blog/errors/filenotfoundfiles/notfound.gif" />
+    <entry file="file://$PROJECT_DIR$/blog/errors/filenotfound.html" />
+    <entry file="file://$PROJECT_DIR$/blog/page_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="7" selection-start-line="17" selection-start-column="8" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views/registration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/page_1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/style/personalCabinet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/.htaccess">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10home/views/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="37" column="67" selection-start-line="37" selection-start-column="67" selection-end-line="37" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/action/readMessage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/action/enterLogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views/personalCabinet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="43" column="91" selection-start-line="43" selection-start-column="91" selection-end-line="43" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/config/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-238">
+          <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="97" selection-start-line="6" selection-start-column="97" selection-end-line="6" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/style/rostyk.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="694">
+          <caret line="95" column="39" selection-start-line="95" selection-start-column="39" selection-end-line="95" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
