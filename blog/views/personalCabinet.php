@@ -7,11 +7,26 @@ echo $_COOKIE["userLogin"];
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>привет <?$_COOKIE["userLogin"];?></title>
+    <link rel="stylesheet" href="../style/personalCabinet.css">
+    <title>привет <? $_COOKIE["userLogin"]; ?></title>
 </head>
 <body>
-<?php
-?>
+<header></header>
+<div class="personal">
+    <div class="photo">
+        <img src="../img/15minute.jpg" alt="">
+    </div>
+    <div class="info-user">
+        <h3>username</h3>
+        <input type="text" name="username">
+        <h3>email</h3>
+        <input type="text" name="email">
+        <h3>password</h3>
+        <input type="password" name="password">
 
+
+    </div>
+    <input type="submit" name="logout" value="loguot">
+</div>
 </body>
 </html>
