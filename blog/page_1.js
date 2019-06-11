@@ -9,12 +9,12 @@ p.className = "p";
 // p.innerText = "here you can show your ideas";
 var kuka = getCookie('userLogin');
 console.log(kuka);
-if (kuka !== '') {
+if (kuka !== null) {
     p.innerHTML = '<p>hello! ' +kuka + ' </p>';
 
 }
 else {
-    p.innerText = "here you can show your ideas :"+kuka;
+    p.innerText = "here you can show your ideas ";
 }
 div.appendChild(p);
 

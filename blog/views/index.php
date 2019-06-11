@@ -9,7 +9,7 @@
 	
 	<div class="home">
 		<header>
-			<a href="rost.html" class="logo_img">
+			<a href="/" class="logo_img">
 				<img src="../img/icon.png">
 			</a>
 			<div class="nav">

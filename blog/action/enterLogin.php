@@ -29,6 +29,6 @@ foreach ($list as $value) {
 //       }
 
 }
-
+echo 'совпадений не найдено';
 
 ?>
