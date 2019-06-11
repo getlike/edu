@@ -1,4 +1,4 @@
-#DirectoryIndex page_1.html
+DirectoryIndex page_1.html
 AddDefaultCharset UTF-8
 php_value upload_max_filesize 10M
 

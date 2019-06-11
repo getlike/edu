@@ -13,7 +13,18 @@
 				<img src="../img/icon.png">
 			</a>
 			<div class="nav">
-				<a href="login.php "><img src="../img/icons/icon_user.svg" alt=""></a>
+
+                <?php
+                //если есть кука
+                if (isset($_COOKIE["userLogin"])){
+                    echo '<a href="personalCabinet.php "><img src="../img/icons/icon_user.svg" alt=""></a>';
+                }
+                else{
+                    echo '<a href="login.php"><img src="../img/icons/icon_user.svg" alt=""></a>';
+                }
+
+                ?>
+
 			</div>
 		</header>
 		<div class="main_text">

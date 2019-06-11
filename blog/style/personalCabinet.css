@@ -1,3 +1,13 @@
 .info-user{
     border: 2px solid green;
+
+}
+.messages{
+    width: 100%;
+    border: 2px solid green;
+
+}
+.messages img{
+    width: 30px;
+
 }
