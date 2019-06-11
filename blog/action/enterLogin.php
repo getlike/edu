@@ -14,7 +14,7 @@ foreach ($list as $value) {
            if ($value['password']==$password){
 //               echo 'connected ';
                //вернуть пользователя с куками если соединение прошло удачно
-               setcookie('userLogin',$username,time()+3600,"/");
+               setcookie('userLogin',$value,time()+3600,"/");
                header('Location: /');
            }
            else{

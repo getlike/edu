@@ -12,7 +12,7 @@ RewriteRule ^ https://danfa.net/%1? [R=301,L]
 
 #ErrorDocument 500 /error500.htm
 
-ErrorDocument 404 https://9gag.com/404s
+#ErrorDocument 404 https://9gag.com/404s
 
 # supress php errors
 php_flag display_startup_errors off
