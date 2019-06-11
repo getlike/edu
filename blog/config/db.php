@@ -3,7 +3,7 @@
  * Создать пользователя
  * createUserMessage('users',$arr=['имя','адресФото','электронка','пароль']);
  * Создать запись
- *  createUserMessage('message',$arr=['имя','текст статьи','Дата','pictureFromArg','оценка']); по умолчанию оценка 5. Нужно думать как ее туду сюду крутить
+ *  createUserMessage('message',$arr=['имя','заголовок','текст статьи','Дата','pictureFromArg','оценка']); по умолчанию оценка 5. Нужно думать как ее туду сюду крутить
  * удалить пользователя
  * deleteUserMesage('users',айдишник записи);
  *удалить сообщение
@@ -49,6 +49,7 @@ function createUserMessage($tablename, $arr = [//todo проверку ввод�
     'email' => 'emailformArg',
     'password' => 'passwordformArg',        //users значения по умолчанию
     'userId'=>3,
+    'head=>'=>'headFromarg',
     'message'=>'messageFromArg',
     'datatime'=>'2019-06-12',
     'picture'=>'pictureFromArg',
@@ -105,6 +106,7 @@ function readUserMessage($tablename)
             array_push($list, array(
                 'id' => $row['id'],
                 'userId' => $row['userId'],
+                'head'=>$row['head'],
                 'message' => $row['message'],
                 'datatime' => $row['datatime'],
                 'picture' => $row['picture'],
