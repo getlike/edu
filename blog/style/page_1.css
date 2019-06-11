@@ -1,0 +1,74 @@
+﻿body {
+	padding: 0px;
+	margin-left: 100px;
+	/*background фон*/
+	background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+	            linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+	            linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+	            linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+	            linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+	            linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+	background-size: 20px 20px;
+	background-color: #131313;
+}
+
+.container:clearfix {
+	margin-top: 250px;
+	margin-left: 20px;
+	width: 1000px;
+	/*border: 2px solid red;*/
+	text-decoration: none;
+	text-align: center;
+	font-size: 30px;
+	color: green;
+}
+
+	.container p {
+		margin-bottom: 0px;
+	    margin-top: 260px;
+	    width: 1000px;
+	    margin-left: 120px;
+	    text-align: center;
+	    font-size: 25px;
+	    color: green;
+	}
+
+	.container h1 {
+		font-size: 75px;
+		color: green;
+		text-transform: uppercase;
+		text-align: center;
+		margin: 15px;
+	}
+
+	.container a {
+		background: #fed136;
+		color: #484543;
+		border-radius: 3px;
+		display: block;
+		width: 240px;
+		padding: 20px 0;
+		margin: 0 auto;
+		text-decoration: none;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 18px;
+		margin-top: 50px;
+	}
+
+.container a:hover { 
+		background: linear-gradient(#fed136, #f59500) #fed136; 
+	}
+
+.clearfix: after {  /*помощьник против багов*/
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }

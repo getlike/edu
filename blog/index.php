@@ -34,8 +34,10 @@
 
 )*/
              foreach ($arrMessage as $value){
+echo $value['head'];
+
                  echo '<div class="message">'.
-                     '<h1>Заголовок</h1>'.
+                     '<h1>'.'pf'.$value['head'].'</h1>'.
                      '<hr>'.
                      '<img src="'.$value['picture'].'" alt="" id="pictMess" align="left">'.
                      '<p>'.$value['message'] . '<br>'.'</p>'.
