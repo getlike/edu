@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июн 11 2019 г., 21:30
+-- Время создания: Июн 12 2019 г., 00:13
 -- Версия сервера: 10.3.13-MariaDB
 -- Версия PHP: 7.1.22
 
@@ -81,7 +81,7 @@ INSERT INTO `users` (`id`, `username`, `photo`, `email`, `password`) VALUES
 (11, 'vasya', 'https://image.shutterstock.com/z/stock-photo-asian-girl-take-look-at-digital-camera-in-park-with-sunglasses-742236094.jpg', 'vasya@i.ua', '123'),
 (12, 'Арсентий Владимирович', 'https://image.shutterstock.com/z/stock-photo-asian-girl-take-look-at-digital-camera-in-park-with-sunglasses-742236094.jpg', 'arsentiyscherbakov@gmail.com', '123'),
 (13, 'йцу', 'https://image.shutterstock.com/z/stock-photo-asian-girl-take-look-at-digital-camera-in-park-with-sunglasses-742236094.jpg', '12312', '32323'),
-(14, 'admin', 'https://image.shutterstock.com/z/stock-photo-asian-girl-take-look-at-digital-camera-in-park-with-sunglasses-742236094.jpg', 'admin', '123456'),
+(14, 'admin', 'https://image.shutterstock.com/z/stock-photo-asian-girl-take-look-at-digital-camera-in-park-with-sunglasses-742236094.jpg', 'admin@i.ua', '123456'),
 (15, 'getlike', 'https://image.shutterstock.com/z/stock-photo-asian-girl-take-look-at-digital-camera-in-park-with-sunglasses-742236094.jpg', 'getlike@i.ua', '607655');
 
 --
