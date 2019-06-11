@@ -105,7 +105,7 @@ function readUserMessage($tablename)
             //echo $row['username'].'<hr>'. $row['id'];
             array_push($list, array(
                 'id' => $row['id'],
-                'userId' => $row['userId'],
+                'user_id' => $row['user_id'],
                 'head'=>$row['head'],
                 'message' => $row['message'],
                 'datatime' => $row['datatime'],

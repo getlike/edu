@@ -62,3 +62,11 @@ body {
 .box input[type = "submit"]:hover {
 	background: #fbc531;
 }
+.box a {
+	font-weight: 300;
+	color: white;
+	text-decoration: none;
+}
+.box a:hover {
+	color: #fbc531;
+}

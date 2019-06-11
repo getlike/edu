@@ -18,42 +18,15 @@ echo $_COOKIE["userLogin"];
     </div>
     <div class="info-user">
         <h3>username</h3>
-        <input type="text" name="username" placeholder="username">
+        <input type="text" name="username">
         <h3>email</h3>
-        <input type="text" name="email" placeholder="email">
+        <input type="text" name="email">
         <h3>password</h3>
-        <input type="password" name="password" placeholder="password">
+        <input type="password" name="password">
+
+
     </div>
     <input type="submit" name="logout" value="loguot">
-    <div class="messages">
-
-        <?php
-        //прочитать сообщения из бд через напрямую через bd.php
-        //заполнять по мере чтения из бд
-
-        include '../config/db.php';
-        $arrMessage = readUserMessage('message');
-
-        foreach ($arrMessage as $value) {
-            '<h1>' . $value['head'] . '</h1>';
-
-            echo '<div class="message">' .
-                '<h1>' . $value['head'] . '</h1>' .
-                '<hr>' .
-                $value['username'].'<hr>'.
-                '<img src="' . $value['picture'] . '" alt="" id="pictMess" align="left">' .
-                '<p>' . $value['message'] . '<br>' . '</p>' .
-                $value['datatime'];
-//                     echo $value['message'] . '<br>';
-            echo '</div>';
-            //todo куда засунуть автора?
-//
-        }
-        ?>
-
-
-    </div>
-
 </div>
 </body>
 </html>

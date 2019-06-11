@@ -72,3 +72,6 @@ body {
 	color: white;
 	text-decoration: none;
 }
+.reg a:hover {
+	color: #fbc531;
+}

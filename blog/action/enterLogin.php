@@ -16,6 +16,7 @@ foreach ($list as $value) {
                //вернуть пользователя с куками если соединение прошло удачно
                setcookie('userLogin',$value['username'],time()+3600,"/");
                setcookie('userEmail',$value['email'],time()+3600,"/");
+               setcookie('user_id',$value['id'],time()+3600,"/");
 
                header('Location: /');
            }

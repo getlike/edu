@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="../style/rostyk.css">
-    <link href="http://allfont.ru/allfont.css?fonts=garamond" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="../style/page_two.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
 	
@@ -13,20 +13,17 @@
 			<a href="/" class="logo_img">
 				<img src="../img/icon.png">
 			</a>
-			<div class="nav">
+            <?php
+            //если есть кука
+            if (isset($_COOKIE["userLogin"])){
+                echo '<a href="personalCabinet.php "><img src="../img/icons/icon_user.svg" alt=""></a>';
+            }
+            else{
+                echo '<a href="login.php"><img src="../img/icons/icon_user.svg" alt=""></a>';
+            }
 
-                <?php
-                //если есть кука
-                if (isset($_COOKIE["userLogin"])){
-                    echo '<a href="personalCabinet.php "><img src="../img/icons/icon_user.svg" alt=""></a>';
-                }
-                else{
-                    echo '<a href="login.php"><img src="../img/icons/icon_user.svg" alt=""></a>';
-                }
+            ?>
 
-                ?>
-
-			</div>
 		</header>
 		<div class="main_text">
 			<div class="left" >
@@ -35,7 +32,6 @@
 				</div>
 			</div>
 			<div class="right">
-				<input type="text" value="text">
                 <?php
                 //прочитать сообщения из бд через напрямую через bd.php
                 //заполнять по мере чтения из бд
@@ -46,7 +42,7 @@
 
 )*/
              foreach ($arrMessage as $value){
-                 '<h1>'.$value['hea'].'</h1>';
+
 
                  echo '<div class="message">'.
                      '<h1>'.$value['head'].'</h1>'.
@@ -66,7 +62,7 @@
 			</div>
 		</div>
 
-		<footer>team B</footer>
+		<footer>TeamBest - Ми старалися!</footer>
 	</div>
 
 </body>

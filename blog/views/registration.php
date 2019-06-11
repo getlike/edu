@@ -23,7 +23,7 @@
 		</div>
 		<input type="submit" value="Registration">
         <a href="login.php">
-            <h3>вернуться на страницу входа</h3>
+            <h3>Вернуться на страницу входа?</h3>
         </a>
 
 	</form>
