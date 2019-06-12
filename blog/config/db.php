@@ -70,7 +70,7 @@ function createUserMessage($tablename, $arr = [//todo проверку ввод�
         echo $arr['head'];
         //INSERT INTO `message` (`id`, `head`, `user_id`, `message`, `datatime`, `picture`, `rate`) VALUES (NULL, 'заголовок', '14', 'тело сообщения', CURRENT_TIMESTAMP, '', '')
         $sql = 'INSERT INTO ' . $tablename . "( head, user_id, message,picture,rate) VALUES ('" . $arr['head'] . "','" . $arr['userId'] . "','" . $arr['message'] . "','" . $arr['picture'] . "','" . $arr['rate'] . "');";
-        echo $arr['head']. $sql;
+
         connect()->query($sql);
 
     }
@@ -78,6 +78,33 @@ function createUserMessage($tablename, $arr = [//todo проверку ввод�
 }
 
 //read message and user
+//' ORDER BY datatime DESC'
+//для личного кабинета
+function readPersCab($tablename,$id){
+    $list = [];
+    $sql = 'SELECT * FROM ' . $tablename.' where user_id='.$id.' ORDER BY datatime DESC';
+//    echo $sql;
+    $result = connect()->query($sql);
+
+    while ($row = $result->fetch_assoc()) {//прочитали message
+        //echo $row['username'].'<hr>'. $row['id'];
+        array_push($list, array(
+            'id' => $row['id'],
+            'user_id' => $row['user_id'],
+            'head' => $row['head'],
+            'message' => $row['message'],
+            'datatime' => $row['datatime'],
+            'picture' => $row['picture'],
+            'rate' => $row['rate']));
+    }
+    return $list;
+    connect()->close();
+
+
+
+}
+
+
 function readUserMessage($tablename)
 {
     $list = [];

@@ -1,7 +1,6 @@
 <?php
 //это персональный кабинет доступный после прохождения регистрации
-echo $_COOKIE["userLogin"];
-
+//и я понимаю что здесь нарушена логика mvc и не только здесь, но я неуспеваю ))
 ?>
 <!doctype html>
 <html lang="ru">
@@ -34,18 +33,23 @@ echo $_COOKIE["userLogin"];
         //заполнять по мере чтения из бд
 
         include '../config/db.php';
-        $arrMessage = readUserMessage('message');//масив сообщений
+if (isset($_COOKIE['user_id'])){
         $id = $_COOKIE['user_id'];
+        $arrMessage = readPersCab('message',$id);//масив сообщений
+
 
         foreach ($arrMessage as $value) {
             if ($value['user_id'] == $id) {
 //                $value['message']=htmlspecialchars($value['message']);//экранируем теги
 //                $value['head']=htmlspecialchars($value['head']);//экранируем теги
+//                echo '<pre>';
+//                print_r($value);
+//                echo '<pre>';
                 '<h1>' . $value['head'] . '</h1>';
 
                 echo '<div class="message">' .
                     '<h1>' . $value['head'] . '</h1>' .
-                    '<hr>' . nameUser($value['user_id']) . '<hr>' .
+                    '<hr>' . $value['user_id'] . '<hr>' .
                     '<img src="' . $value['picture'] . '" alt="" id="pictMess" align="left">' .
                     '<p>' . $value['message'] . '<br>' . '</p>' .
                     $value['datatime'];
@@ -55,17 +59,12 @@ echo $_COOKIE["userLogin"];
             //todo куда засунуть автора?
 //
         }
-        function nameUser($user_id)
-        {//ой костли)((((((
-            $arrUsers = readUserMessage('users');
-            foreach ($arrUsers as $value) {
-                if ($value['id'] == $user_id) {
-
-                    return $value['username'];
-                }
-            }
-
-        }
+//        function nameUser($user_id)
+//        {//ой костли)((((((
+}
+else{
+    header('Location: /views/login.php');
+}
 
         ?>
 

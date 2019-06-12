@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4fb836b4-4023-4097-b96b-2662253e39a5" name="Default Changelist" comment="Default Changelist&#10;&#10;выставил экраны на месаги" />
+    <list default="true" id="4fb836b4-4023-4097-b96b-2662253e39a5" name="Default Changelist" comment="Default Changelist&#10;&#10;выставил экраны на месаги">
+      <change afterPath="$PROJECT_DIR$/blog/img/home.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/img/hulk.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/blog/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/action/writeMessage.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/action/writeMessage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/config/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/config/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/style/personalCabinet.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/style/personalCabinet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/views/personalCabinet.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/personalCabinet.php" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -13,46 +22,35 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.40189573">
+    <splitter split-orientation="horizontal" split-proportion="0.6386233">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="loginstyle.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/blog/style/loginstyle.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="565">
-                  <caret line="75" column="1" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="writeMessage.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/blog/action/writeMessage.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
-                  <caret line="25" column="49" selection-start-line="24" selection-start-column="2" selection-end-line="25" selection-end-column="49" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="карта.txt" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/blog/карта.txt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="16" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="personalCabinet.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/blog/style/personalCabinet.css">
-              <provider selected="true" editor-type-id="text-editor" />
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="187">
+                  <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+                </state>
+              </provider>
             </entry>
           </file>
-          <file leaf-file-name="personalCabinet.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="enterLogin.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/blog/action/enterLogin.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="340">
+                  <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="37" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="personalCabinet.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/blog/views/personalCabinet.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="229">
-                  <caret line="28" column="96" selection-start-line="28" selection-start-column="96" selection-end-line="28" selection-end-column="96" />
+                <state relative-caret-position="51">
+                  <caret line="3" selection-start-line="3" selection-end-line="3" />
+                  <folding>
+                    <element signature="e#1229#2149#0#PHP" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -70,23 +68,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="newMessage.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/blog/views/newMessage.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="782">
-                  <caret line="46" column="95" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="95" />
-                  <folding>
-                    <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="db.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/blog/config/db.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="616">
-                  <caret line="72" column="26" selection-start-line="72" selection-start-column="26" selection-end-line="72" selection-end-column="26" />
+                <state relative-caret-position="191">
+                  <caret line="86" column="9" lean-forward="true" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
                   <folding>
                     <element signature="e#6#441#0#PHP" expanded="true" />
                   </folding>
@@ -94,20 +80,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="enterLogin.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/blog/action/enterLogin.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="5" selection-start-column="5" selection-end-column="5" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="superuser.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/blog/views/superuser.html">
+          <file leaf-file-name="newMessage.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/blog/views/newMessage.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="527">
-                  <caret line="31" selection-start-line="31" selection-end-line="31" />
+                  <caret line="46" column="95" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="95" />
                 </state>
               </provider>
             </entry>
@@ -205,17 +182,17 @@
         <option value="$PROJECT_DIR$/blog/errors/filenotfound.html" />
         <option value="$PROJECT_DIR$/blog/page_1.js" />
         <option value="$PROJECT_DIR$/blog/views/pCabinet.php" />
-        <option value="$PROJECT_DIR$/blog/style/personalCabinet.css" />
-        <option value="$PROJECT_DIR$/blog/.htaccess" />
         <option value="$PROJECT_DIR$/blog/action/enterLogin.php" />
         <option value="$PROJECT_DIR$/blog/style/rostyk.css" />
         <option value="$PROJECT_DIR$/blog/views/index.php" />
         <option value="$PROJECT_DIR$/blog/style/loginstyle.css" />
         <option value="$PROJECT_DIR$/blog/views/superuser.html" />
         <option value="$PROJECT_DIR$/blog/views/newMessage.php" />
-        <option value="$PROJECT_DIR$/blog/config/db.php" />
-        <option value="$PROJECT_DIR$/blog/views/personalCabinet.php" />
         <option value="$PROJECT_DIR$/blog/action/writeMessage.php" />
+        <option value="$PROJECT_DIR$/blog/.htaccess" />
+        <option value="$PROJECT_DIR$/blog/config/db.php" />
+        <option value="$PROJECT_DIR$/blog/style/personalCabinet.css" />
+        <option value="$PROJECT_DIR$/blog/views/personalCabinet.php" />
       </list>
     </option>
   </component>
@@ -718,6 +695,12 @@
               <item name="edu" type="b2602c69:ProjectViewProjectNode" />
               <item name="edu" type="462c0819:PsiDirectoryNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -754,17 +737,17 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Greenfly\Dropbox\edu\chat\server" />
-      <recent name="G:\Dropbox\edu\chat\server" />
-      <recent name="C:\Users\Greenfly\Dropbox\edu\pacman\sound" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\Dropbox\edu\blog\views" />
       <recent name="G:\Dropbox\edu\blog\errors" />
       <recent name="G:\Dropbox\edu\blog" />
       <recent name="G:\Dropbox\edu\blog\action" />
       <recent name="G:\Dropbox\edu\blog\config" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Greenfly\Dropbox\edu\chat\server" />
+      <recent name="G:\Dropbox\edu\chat\server" />
+      <recent name="C:\Users\Greenfly\Dropbox\edu\pacman\sound" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -861,7 +844,7 @@
       <workItem from="1560234582994" duration="2573000" />
       <workItem from="1560237187433" duration="6755000" />
       <workItem from="1560272388977" duration="13794000" />
-      <workItem from="1560317716857" duration="13098000" />
+      <workItem from="1560317716857" duration="17482000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist&#10;Сашка поправил move()">
       <created>1558692999009</created>
@@ -1017,26 +1000,34 @@
       <option name="project" value="LOCAL" />
       <updated>1560337972032</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Default Changelist&#10;&#10;выставил экраны на месаги">
+      <created>1560338832139</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1560338832139</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="311295000" />
+    <option name="totallyTimeSpent" value="315679000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1288" y="-81" width="1296" height="1000" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14644013" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" weight="0.32843137" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32843137" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.33044422" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.24509804" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20877458" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.17281106" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.22222222" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1048,6 +1039,29 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.13501143" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.33044422" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13691376" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="13" />
+      <window_info anchor="bottom" id="Find" order="2" visible="true" weight="0.13501143" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.22222222" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.24509804" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32843137" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32843137" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1084,7 +1098,7 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/Команда А/js/main.js</url>
           <line>69</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
@@ -1123,6 +1137,7 @@
           <line>10</line>
         </line-breakpoint>
       </breakpoints>
+      <option name="time" value="1" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -1235,13 +1250,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/action/registr.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/errors/error404.html" />
     <entry file="file://$PROJECT_DIR$/blog/errors/error500.htm" />
     <entry file="file://$PROJECT_DIR$/blog/errors/PHP_errors.log" />
@@ -1251,13 +1259,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/views/registration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1290,76 +1291,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/index.html" />
-    <entry file="file://$PROJECT_DIR$/blog/.htaccess">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/js/superuser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1118" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/action/enterLogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/views/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/views/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="18" column="43" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/style/loginstyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="565">
           <caret line="75" column="1" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/config/db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="72" column="26" selection-start-line="72" selection-start-column="26" selection-end-line="72" selection-end-column="26" />
-          <folding>
-            <element signature="e#6#441#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/style/personalCabinet.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/views/newMessage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="95" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="95" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/views/personalCabinet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="28" column="96" selection-start-line="28" selection-start-column="96" selection-end-line="28" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/action/writeMessage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="49" selection-start-line="24" selection-start-column="2" selection-end-line="25" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -1370,10 +1305,96 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/blog/js/superuser.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/blog/views/superuser.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views/registration.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/action/registr.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="41" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="18" column="43" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/action/writeMessage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/config/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="86" column="9" lean-forward="true" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+          <folding>
+            <element signature="e#6#441#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views/newMessage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="46" column="95" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/action/enterLogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/style/personalCabinet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views/personalCabinet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#1229#2149#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>

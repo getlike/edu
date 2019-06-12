@@ -22,9 +22,10 @@ if ($_POST['picture']!=null){
 if ($_POST['rate']!=null){
     $rate=$_POST['rate'];
 }
-//$message=htmlspecialchars($message);//экранируем теги
-//$head=htmlspecialchars($head);//экранируем теги
+$message=htmlspecialchars($message);//экранируем теги
+$head=htmlspecialchars($head);//экранируем теги
 createUserMessage('message', $arr = ['head'=>$head,'userId' => $userId, 'message' => $message]);// создание стастьи
 echo 'post '.$head.' is created';
+header('Location: /views/index.php');
 //экранирование
 ?>
