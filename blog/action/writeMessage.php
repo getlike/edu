@@ -6,8 +6,13 @@ include '../config/db.php';
 //                'datatime' => $row['datatime'],
 //                'picture' => $row['picture'],
 //                'rate' => $row['rate']));
-$userId = $_POST['userId'];
+$userId = $_POST['user_id'];
 $message= $_POST['message'];
+$head=$_POST['head'];
+if ($userId==''){
+    $userId=$_COOKIE["user_id"];
+    //echo $userId;
+}
 if ($_POST['datatime']!=null){
     $datatime=$_POST['datatime'];
 }
@@ -17,6 +22,9 @@ if ($_POST['picture']!=null){
 if ($_POST['rate']!=null){
     $rate=$_POST['rate'];
 }
-createUserMessage('message', $arr = ['userId' => $userId, 'message' => $message]);// создание стастьи
-
+//$message=htmlspecialchars($message);//экранируем теги
+//$head=htmlspecialchars($head);//экранируем теги
+createUserMessage('message', $arr = ['head'=>$head,'userId' => $userId, 'message' => $message]);// создание стастьи
+echo 'post '.$head.' is created';
+//экранирование
 ?>

@@ -8,10 +8,11 @@ echo $_COOKIE["userLogin"];
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../style/personalCabinet.css">
-    <title>привет <? $_COOKIE["userLogin"]; ?></title>
+    <title>Персональный кабинет</title>
 </head>
 <body>
 <header></header>
+Привет <? $_COOKIE["userLogin"]; ?> !
 <div class="personal">
     <div class="photo">
         <img src="../img/15minute.jpg" alt="">
@@ -24,7 +25,8 @@ echo $_COOKIE["userLogin"];
         <h3>password</h3>
         <input type="password" name="password" placeholder="password">
     </div>
-    <input type="submit" name="logout" value="loguot">
+    <input type="submit" name="logout" value="loguot" >
+    <input type="submit" name="logout" value="addMessage" onclick="window.location='../views/newMessage.php';">
     <div class="messages">
 
         <?php
@@ -37,6 +39,8 @@ echo $_COOKIE["userLogin"];
 
         foreach ($arrMessage as $value) {
             if ($value['user_id'] == $id) {
+//                $value['message']=htmlspecialchars($value['message']);//экранируем теги
+//                $value['head']=htmlspecialchars($value['head']);//экранируем теги
                 '<h1>' . $value['head'] . '</h1>';
 
                 echo '<div class="message">' .
@@ -56,6 +60,7 @@ echo $_COOKIE["userLogin"];
             $arrUsers = readUserMessage('users');
             foreach ($arrUsers as $value) {
                 if ($value['id'] == $user_id) {
+
                     return $value['username'];
                 }
             }

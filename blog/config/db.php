@@ -11,11 +11,6 @@
  *  */
 
 
-
-
-
-
-
 //конектимся
 function connect($arr = [
     "servername" => "localhost",
@@ -34,6 +29,7 @@ function connect($arr = [
         die('ERROR : ' . $connection->connect_error);
     }
 //    echo 'conn';
+
     return $connection;
 
 }
@@ -48,14 +44,14 @@ function createUserMessage($tablename, $arr = [//todo проверку ввод�
     'photo' => '',
     'email' => 'emailformArg',
     'password' => 'passwordformArg',        //users значения по умолчанию
-    'userId'=>3,
-    'head=>'=>'headFromarg',
-    'message'=>'messageFromArg',
-    'datatime'=>'2019-06-12',
-    'picture'=>'pictureFromArg',
-    'rate'=>5])                             //message значения по умолчанию
+    'userId' => 3,
+    'head=>' => 'headFromarg',
+    'message' => 'messageFromArg',
+    'datatime' => '2019-06-12',
+    'picture' => 'pictureFromArg',
+    'rate' => 5])                             //message значения по умолчанию
 {
-    $listUsers=readUserMessage('users');//получаем полльзователей
+    $listUsers = readUserMessage('users');//получаем полльзователей
     foreach ($listUsers as $value) {//todo переделать под функцию in_array
 
 
@@ -66,15 +62,17 @@ function createUserMessage($tablename, $arr = [//todo проверку ввод�
         }
     }
     if ($tablename == 'users') {
-        $sql = 'INSERT INTO ' . $tablename . "( username, email,password) VALUES ('" . $arr['username'] .  "','" . $arr['email'] . "','" . $arr['password'] . "');";
+        $sql = 'INSERT INTO ' . $tablename . "( username, email,password) VALUES ('" . $arr['username'] . "','" . $arr['email'] . "','" . $arr['password'] . "');";
 
         connect()->query($sql);
 
-    }
-    elseif ($tablename=='message'){
-        $sql = 'INSERT INTO ' . $tablename . "( userId, message,datatime,picture,rate) VALUES ('" . $arr['userId'] . "','" . $arr['message'] . "','" . $arr['datatime'] . "','" . $arr['picture'] . "','" . $arr['rate'] . "');";
-
+    } elseif ($tablename == 'message') {
+        echo $arr['head'];
+        //INSERT INTO `message` (`id`, `head`, `user_id`, `message`, `datatime`, `picture`, `rate`) VALUES (NULL, 'заголовок', '14', 'тело сообщения', CURRENT_TIMESTAMP, '', '')
+        $sql = 'INSERT INTO ' . $tablename . "( head, user_id, message,picture,rate) VALUES ('" . $arr['head'] . "','" . $arr['userId'] . "','" . $arr['message'] . "','" . $arr['picture'] . "','" . $arr['rate'] . "');";
+        echo $arr['head']. $sql;
         connect()->query($sql);
+
     }
     connect()->close();//от греха подальше
 }
@@ -106,7 +104,7 @@ function readUserMessage($tablename)
             array_push($list, array(
                 'id' => $row['id'],
                 'user_id' => $row['user_id'],
-                'head'=>$row['head'],
+                'head' => $row['head'],
                 'message' => $row['message'],
                 'datatime' => $row['datatime'],
                 'picture' => $row['picture'],
@@ -119,15 +117,15 @@ function readUserMessage($tablename)
 }
 
 
-
-function deleteUserMesage($tablename,$id){
-    if ($tablename=='message'){
-        $sql = 'DELETE FROM '. $tablename.' WHERE `message`.`id` = '.$id ;
+function deleteUserMesage($tablename, $id)
+{
+    if ($tablename == 'message') {
+        $sql = 'DELETE FROM ' . $tablename . ' WHERE `message`.`id` = ' . $id;
         $result = connect()->query($sql);
         echo 'delete complete';
     }
-    if ($tablename=='users'){
-        $sql = 'DELETE FROM '. $tablename.' WHERE `users`.`id` = '.$id ;
+    if ($tablename == 'users') {
+        $sql = 'DELETE FROM ' . $tablename . ' WHERE `users`.`id` = ' . $id;
         $result = connect()->query($sql);
         echo 'delete complete';
     }
