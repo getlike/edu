@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4fb836b4-4023-4097-b96b-2662253e39a5" name="Default Changelist" comment="Default Changelist&#10;&#10;выставил экраны на месаги">
-      <change afterPath="$PROJECT_DIR$/blog/img/home.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/img/hulk.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/blog/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/action/writeMessage.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/action/writeMessage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/config/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/config/db.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/style/personalCabinet.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/style/personalCabinet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views/personalCabinet.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/personalCabinet.php" afterDir="false" />
+    <list default="true" id="4fb836b4-4023-4097-b96b-2662253e39a5" name="Default Changelist" comment="Default Changelist&#10;&#10;выставил экраны на месаги&#10;доработать личній каб - если кука сдохла">
+      <change beforePath="$PROJECT_DIR$/blog/карта.txt" beforeDir="false" afterPath="$PROJECT_DIR$/blog/карта.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,7 +36,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="personalCabinet.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="personalCabinet.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/blog/views/personalCabinet.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="51">
@@ -51,6 +44,15 @@
                   <folding>
                     <element signature="e#1229#2149#0#PHP" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="карта.txt" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/blog/карта.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="204">
+                  <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="29" />
                 </state>
               </provider>
             </entry>
@@ -83,7 +85,7 @@
           <file leaf-file-name="newMessage.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/blog/views/newMessage.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="527">
+                <state relative-caret-position="156">
                   <caret line="46" column="95" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="95" />
                 </state>
               </provider>
@@ -142,7 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/9/js/user.js" />
         <option value="$PROJECT_DIR$/9/style.css" />
         <option value="$PROJECT_DIR$/9/index.html" />
         <option value="$PROJECT_DIR$/9/views/main.css" />
@@ -193,6 +194,7 @@
         <option value="$PROJECT_DIR$/blog/config/db.php" />
         <option value="$PROJECT_DIR$/blog/style/personalCabinet.css" />
         <option value="$PROJECT_DIR$/blog/views/personalCabinet.php" />
+        <option value="$PROJECT_DIR$/blog/карта.txt" />
       </list>
     </option>
   </component>
@@ -844,7 +846,7 @@
       <workItem from="1560234582994" duration="2573000" />
       <workItem from="1560237187433" duration="6755000" />
       <workItem from="1560272388977" duration="13794000" />
-      <workItem from="1560317716857" duration="17482000" />
+      <workItem from="1560317716857" duration="19210000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist&#10;Сашка поправил move()">
       <created>1558692999009</created>
@@ -1007,11 +1009,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560338832139</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Default Changelist&#10;&#10;выставил экраны на месаги&#10;доработать личній каб - если кука сдохла">
+      <created>1560345523366</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1560345523366</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="315679000" />
+    <option name="totallyTimeSpent" value="317407000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1024,7 +1033,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32843137" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.33044422" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.24509804" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20877458" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20877458" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1082,7 +1091,8 @@
     <MESSAGE value="Default Changelist&#10;выбрасываем статтьи&#10;добавил заголовок&#10;переместил html&#10;включил в проект js&#10;работа с 404 и со стилями&#10;&#10;получили куки и проверили в js" />
     <MESSAGE value="Default Changelist&#10;выбрасываем статтьи&#10;добавил заголовок&#10;переместил html&#10;включил в проект js&#10;работа с 404 и со стилями&#10;&#10;получили куки и проверили в js&#10;personalCabinet" />
     <MESSAGE value="Default Changelist&#10;&#10;выставил экраны на месаги" />
-    <option name="LAST_COMMIT_MESSAGE" value="Default Changelist&#10;&#10;выставил экраны на месаги" />
+    <MESSAGE value="Default Changelist&#10;&#10;выставил экраны на месаги&#10;доработать личній каб - если кука сдохла" />
+    <option name="LAST_COMMIT_MESSAGE" value="Default Changelist&#10;&#10;выставил экраны на месаги&#10;доработать личній каб - если кука сдохла" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1098,7 +1108,7 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/Команда А/js/main.js</url>
+          <url />
           <line>69</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
@@ -1298,13 +1308,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/карта.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/js/superuser.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1362,7 +1365,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/views/newMessage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
+        <state relative-caret-position="156">
           <caret line="46" column="95" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="95" />
         </state>
       </provider>
@@ -1395,6 +1398,13 @@
           <folding>
             <element signature="e#1229#2149#0#PHP" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/карта.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="29" />
         </state>
       </provider>
     </entry>

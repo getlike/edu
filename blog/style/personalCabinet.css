@@ -1,13 +1,82 @@
-.info-user{
-    border: 2px solid green;
-
+* {
+	margin: 0;
+	padding: 0;
 }
-.messages{
+body {
+	background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+	            linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+	            linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+	            linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+	            linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+	            linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+	background-size: 20px 20px;
+	background-color: #131313;
+	font-family: 'Raleway', sans-serif;	
+}
+.personal {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.personal input {
+	width: 95px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    border: 2px solid #fbc531;
+    background: none;
+    color: white;
+    outline: none;
+    padding: 3px;
+    transition: 0.25s;
+    margin-bottom: 5px;
+}
+.personal input:hover {
+	background: #fbc531;
+}
+.photo {
+	display: flex;
+    align-items: center;
+    width: 200px;
+}
+.photo img {
+	border-radius: 50%;
+    width: 100%;
+}
+.info-user {
+    text-align: center;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+.info-user input {
+	color: white;
+	display: block;
+	text-align: center;
+	margin: 15px auto;
+	border-radius: 24px;
+	padding: 7px 3px;
+	width: 200px;
+	font-weight: bold;
+	transition: 0.25s;
+	background: none;
+	outline: none;
+	border: 2px solid #30336b;
+}
+.info-user input:focus {
+	width: 300px;
+	border-color: #fbc531;
+}
+.info-user input:hover {
+	background: #fbc531;
+}
+.messages {
     width: 100%;
     border: 2px solid green;
 
 }
-.messages img{
+.messages img {
     width: 159px;
     padding: 10px
 

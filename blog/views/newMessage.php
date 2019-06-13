@@ -8,7 +8,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../style/newpost.css">
     <link rel="stylesheet" type="text/css" href="../style/page_two.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
     <title>Создать новый пост</title>

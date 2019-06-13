@@ -18,11 +18,11 @@
     </div>
     <div class="info-user">
         <h3>username</h3>
-        <input type="text" name="username" placeholder="username">
+        <input type="text" name="username">
         <h3>email</h3>
-        <input type="text" name="email" placeholder="email">
+        <input type="text" name="email">
         <h3>password</h3>
-        <input type="password" name="password" placeholder="password">
+        <input type="password" name="password">
     </div>
     <input type="submit" name="logout" value="loguot" >
     <input type="submit" name="logout" value="addMessage" onclick="window.location='../views/newMessage.php';">

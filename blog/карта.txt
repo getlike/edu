@@ -10,4 +10,6 @@ index.php - стартовая страница
 ойнасрано)
 
 userLogin
-gource -p 0.6 -f
+gource -p 0.6 -f -s 30 -e 0.5
+
+
