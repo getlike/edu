@@ -25,7 +25,7 @@ if ($_POST['rate']!=null){
 $message=htmlspecialchars($message);//экранируем теги
 $head=htmlspecialchars($head);//экранируем теги
 createUserMessage('message', $arr = ['head'=>$head,'userId' => $userId, 'message' => $message]);// создание стастьи
-echo 'post '.$head.' is created';
+//echo 'post '.$head.' is created';
 header('Location: /views/index.php');
 //экранирование
 ?>

@@ -1,0 +1,47 @@
+
+.left .photo-message{
+	border: 2px solid yellow;
+	height: 212px;
+}
+
+.head-message {
+	display: flex;
+	font-family: 'Raleway', sans-serif;
+}
+.head-message label {
+	font-size: 20px;
+	color: #fed136;
+	margin: 15px 0;
+}
+.head-message form {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+}
+.head-message input {
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+.head-message textarea {
+	text-align: center;
+	margin: 15px 0;
+	font-family: 'Raleway', sans-serif;
+}
+.but {
+	text-transform: uppercase;
+    width: 90px;
+    height: 25px;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+	border-radius: 10px;
+	text-decoration: none;
+	background: #fed136;
+	font-size: 13px;
+	color: #484543;
+}
+.but:hover {
+	background: linear-gradient(#fed136, #9dfe36c4) #fed136;
+}

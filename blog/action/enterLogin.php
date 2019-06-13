@@ -18,7 +18,7 @@ foreach ($list as $value) {
                setcookie('userEmail',$value['email'],time()+3600,"/");
                setcookie('user_id',$value['id'],time()+3600,"/");
 
-               header('Location: /');
+               header('Location: /views/personalCabinet.php');
            }
            else{
                echo 'password is wrong';

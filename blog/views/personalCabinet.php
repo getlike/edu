@@ -11,20 +11,19 @@
 </head>
 <body>
 <header></header>
-Привет <? $_COOKIE["userLogin"]; ?> !
 <div class="personal">
     <div class="photo">
         <img src="../img/15minute.jpg" alt="">
     </div>
-    <div class="info-user">
-        <h3>username</h3>
-        <input type="text" name="username">
-        <h3>email</h3>
-        <input type="text" name="email">
-        <h3>password</h3>
-        <input type="password" name="password">
-    </div>
-    <input type="submit" name="logout" value="loguot" >
+<!--    <div class="info-user">-->
+<!--        <h3>username</h3>-->
+<!--        <input type="text" name="username">-->
+<!--        <h3>email</h3>-->
+<!--        <input type="text" name="email">-->
+<!--        <h3>password</h3>-->
+<!--        <input type="password" name="password">-->
+<!--    </div>-->
+    <input type="submit" name="logout" value="loguot" onclick="window.location='../action/out.php';">
     <input type="submit" name="logout" value="addMessage" onclick="window.location='../views/newMessage.php';">
     <div class="messages">
 
@@ -40,11 +39,7 @@ if (isset($_COOKIE['user_id'])){
 
         foreach ($arrMessage as $value) {
             if ($value['user_id'] == $id) {
-//                $value['message']=htmlspecialchars($value['message']);//экранируем теги
-//                $value['head']=htmlspecialchars($value['head']);//экранируем теги
-//                echo '<pre>';
-//                print_r($value);
-//                echo '<pre>';
+//
                 '<h1>' . $value['head'] . '</h1>';
 
                 echo '<div class="message">' .
@@ -59,8 +54,8 @@ if (isset($_COOKIE['user_id'])){
             //todo куда засунуть автора?
 //
         }
-//        function nameUser($user_id)
-//        {//ой костли)((((((
+
+
 }
 else{
     header('Location: /views/login.php');

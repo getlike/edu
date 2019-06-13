@@ -32,11 +32,13 @@
     </header>
     <div class="main_text">
         <div class="left">
-            <div class="search_left">
-                <img src="../img/icons/icon_search.svg" alt=""><input type="search" placeholder="Search">
-            </div>
+            <form action="updatePhoto.php" method="post" enctype="multipart/form-data">
+                <div class="photo-message" style="color: white;">photo</div>
+                <input class="but" type="submit">
+            </form>
+
         </div>
-        <div class="right" style="border: 2px solid green">
+        <div class="right">
             <div class="head-message">
                 <form action="../action/writeMessage.php" method="post">
 
@@ -44,7 +46,7 @@
                     <input type="text" name="head">
                     <label name="user_id"></label>
                     <textarea name="message" id="" cols="30" rows="10"></textarea>
-                    <input type="submit" onclick="window.location='../action/writeMessage.php';">
+                    <input class="but" type="submit" onclick="window.location='../action/writeMessage.php';">
                 </form>
             </div>
 

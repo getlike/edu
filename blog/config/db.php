@@ -67,7 +67,7 @@ function createUserMessage($tablename, $arr = [//todo проверку ввод�
         connect()->query($sql);
 
     } elseif ($tablename == 'message') {
-        echo $arr['head'];
+        //echo $arr['head'];
         //INSERT INTO `message` (`id`, `head`, `user_id`, `message`, `datatime`, `picture`, `rate`) VALUES (NULL, 'заголовок', '14', 'тело сообщения', CURRENT_TIMESTAMP, '', '')
         $sql = 'INSERT INTO ' . $tablename . "( head, user_id, message,picture,rate) VALUES ('" . $arr['head'] . "','" . $arr['userId'] . "','" . $arr['message'] . "','" . $arr['picture'] . "','" . $arr['rate'] . "');";
 

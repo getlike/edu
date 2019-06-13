@@ -11,7 +11,8 @@ body {
 	            linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
 	background-size: 20px 20px;
 	background-color: #131313;
-	font-family: 'Raleway', sans-serif;	
+	font-family: 'Raleway', sans-serif;
+	background-attachment:fixed;
 }
 .personal {
 	display: flex;
@@ -72,12 +73,30 @@ body {
 	background: #fbc531;
 }
 .messages {
-    width: 100%;
-    border: 2px solid green;
-
+    width: 750px;
+    color: white;
+    margin-bottom: 15px;
 }
-.messages img {
+.message {
+	width: 100%;
+	margin: 15px 0;
+	text-align: center;
+	border: 1px solid #30336b;
+}
+.message h1 {
+	font-size: 25px;
+}
+.message img{
+	width: 300px;
+	padding: 15px;
+}
+.message p
+.message hr {
+	display: none;
+}
+
+/*.messages img {
     width: 159px;
     padding: 10px
 
-}
+}*/

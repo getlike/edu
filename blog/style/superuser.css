@@ -1,0 +1,156 @@
+﻿body { 
+	margin: 0px;
+	background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+	            linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+	            linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+	            linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+	            linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+	            linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+	background-size: 20px 20px;
+	background-color: #131313;
+}
+
+.header { 
+	background: #4f4b50;
+    height: 30px;
+    border: 0px;
+    padding: 30px;
+    border-bottom: 4px solid green;
+    display: block;
+    border-radius: 2px solid red;
+}
+
+	header .logo {
+		width: 25px;
+		height: 25px;
+		display: block;
+		float: left;
+	}
+
+		header .logo img {
+			width: 15px;
+			height: 15px;
+		}
+
+.nav {
+	float: right;
+}
+
+	.nav a {
+		font-size: 18px;
+		color: #dbad3f;
+		margin-left: 40px;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+		.nav a:hover {
+			color: darkred;
+		}
+
+.panel {
+	background: #0b5f0b;
+	margin: 70px;
+	height: 500px;
+	width: 1200px;
+	border-radius: 10px;
+	border: 2px solid white;
+}
+
+	.panel_left {
+		width: 300px;
+		height: 500px;
+		/*border: 2px solid white;*/
+		position: relative;
+		float: left;
+	}
+
+		.panel_left img {
+			background: white;
+			margin: 50px;
+			height: 200px;
+			width: 200px;
+			border-radius: 200px;
+			border: 3px solid black;
+			margin-bottom: 0px;
+		}
+
+		.panel_left p {
+			background: white;
+			text-align: center;
+			margin-left: 50px;
+			margin-top: 30px;
+			height: 25px;
+			width: 200px;
+			border-radius: 10px;
+			border: 2px solid black;
+		}
+
+	.panel_center {
+		width: 260px;
+	    height: 500px;
+	    margin-left: 305px;
+	    margin-right: 0px;
+	    border-radius: 10px;
+	    /*border: 2px solid black;*/
+	    position: absolute;
+	    overflow: hidden;
+	}
+
+		.panel_center p {
+			background: white;
+			text-align: center;
+			margin: 10px;
+			margin-top: 100px;
+			height: 100px;
+			width: 240px;
+			border-radius: 10px;
+			border: 2px solid black;
+		}
+
+		.panel_center div {
+			background: white;
+			text-align: center;
+			margin: 10px;
+			margin-top: 70px;
+			height: 100px;
+			width: 240px;
+			border-radius: 10px;
+			border: 2px solid black;
+		}
+
+	.panel_right {
+		width: 625px;
+	    height: 500px;
+	    /*border: 2px solid red;*/
+	    float: right;
+	    margin-top: 0px;
+	    position: relative;
+	    overflow: hidden;
+	}
+
+		.panel_right div {
+			background: white;
+			text-align: center;
+			float: right;
+			height: 210px;
+			width: 600px;
+			margin-top: 25px;
+			margin-right: 25px;
+			position: relative;
+			border-radius: 5px;
+			border: 2px solid black;
+			overflow-y: scroll; 
+		}
+
+.clearfix: after {  /*помощьник против багов*/
+visibility: hidden;
+display: block;
+font-size: 0;
+content: " ";
+clear: both;
+height: 0;
+}
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
