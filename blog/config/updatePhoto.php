@@ -20,20 +20,15 @@ if (!empty($_FILES['img']['tmp_name'])) {
     }
 
     $_SESSION['msg'] = 'файл успешно загружен';//тут привязать к пользователю
+    $_SESSION['img'] = '../img/imgMess/' . $_FILES['img']['name'];
+
     header('Location: ../views/newMessage.php');
 
-} else {
+} else {//если все ок возвращаем сообщение и адрес картинки
     $_SESSION['msg'] = 'file not uploadet';
+
+
     header('Location: ../views/newMessage.php');
 
 }
 
-//
-//Array
-//(
-//    [name] => image_2019-05-06_11-59-06.png
-//[type] => image/png
-//[tmp_name] => C:\OSPanel\userdata\temp\phpBCFF.tmp
-//[error] => 0
-//    [size] => 32820
-//)

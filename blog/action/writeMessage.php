@@ -9,6 +9,8 @@ include '../config/db.php';
 $userId = $_POST['user_id'];
 $message= $_POST['message'];
 $head=$_POST['head'];
+$img=$_POST['img'];
+
 if ($userId==''){
     $userId=$_COOKIE["user_id"];
     //echo $userId;
@@ -24,7 +26,7 @@ if ($_POST['rate']!=null){
 }
 $message=htmlspecialchars($message);//экранируем теги
 $head=htmlspecialchars($head);//экранируем теги
-createUserMessage('message', $arr = ['head'=>$head,'userId' => $userId, 'message' => $message]);// создание стастьи
+createUserMessage('message', $arr = ['head'=>$head,'userId' => $userId, 'message' => $message,'picture'=>$img]);// создание стастьи
 //echo 'post '.$head.' is created';
 header('Location: /views/index.php');
 //экранирование

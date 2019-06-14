@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4fb836b4-4023-4097-b96b-2662253e39a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/style/fly_window.css" afterDir="false" />
+    <list default="true" id="4fb836b4-4023-4097-b96b-2662253e39a5" name="Default Changelist" comment="Default Changelist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog.rar" beforeDir="false" afterPath="$PROJECT_DIR$/blog.rar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/config/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/config/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/action/writeMessage.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/action/writeMessage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/config/updatePhoto.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/config/updatePhoto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/blog/desktop.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/style/newpost.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/style/newpost.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/style/page_two.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/style/page_two.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/views/newMessage.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/newMessage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views/personalCabinet.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views/personalCabinet.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,14 +18,26 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.27174976">
+    <splitter split-orientation="horizontal" split-proportion="0.18562874">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="newMessage.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="newMessage.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/blog/views/newMessage.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+                <state relative-caret-position="374">
+                  <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="db.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/blog/config/db.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="862">
+                  <caret line="89" column="19" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
+                  <folding>
+                    <element signature="e#6#441#0#PHP" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -45,16 +50,25 @@
             <entry file="file://$PROJECT_DIR$/blog/views/personalCabinet.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="153">
-                  <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+                  <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="updatePhoto.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="updatePhoto.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/blog/config/updatePhoto.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+                <state relative-caret-position="233">
+                  <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="writeMessage.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/blog/action/writeMessage.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="301">
+                  <caret line="31" column="15" lean-forward="true" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
                 </state>
               </provider>
             </entry>
@@ -154,15 +168,15 @@
         <option value="$PROJECT_DIR$/blog/.htaccess" />
         <option value="$PROJECT_DIR$/blog/карта.txt" />
         <option value="$PROJECT_DIR$/blog/action/registr.php" />
-        <option value="$PROJECT_DIR$/blog/action/writeMessage.php" />
         <option value="$PROJECT_DIR$/blog/action/out.php" />
         <option value="$PROJECT_DIR$/blog/action/enterLogin.php" />
         <option value="$PROJECT_DIR$/blog/style/personalCabinet.css" />
         <option value="$PROJECT_DIR$/blog/style/newpost.css" />
         <option value="$PROJECT_DIR$/blog/config/db.php" />
         <option value="$PROJECT_DIR$/blog/views/personalCabinet.php" />
-        <option value="$PROJECT_DIR$/blog/views/newMessage.php" />
         <option value="$PROJECT_DIR$/blog/config/updatePhoto.php" />
+        <option value="$PROJECT_DIR$/blog/views/newMessage.php" />
+        <option value="$PROJECT_DIR$/blog/action/writeMessage.php" />
       </list>
     </option>
   </component>
@@ -670,6 +684,13 @@
               <item name="edu" type="b2602c69:ProjectViewProjectNode" />
               <item name="edu" type="462c0819:PsiDirectoryNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="imgMess" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -805,7 +826,7 @@
       <workItem from="1560317716857" duration="19210000" />
       <workItem from="1560428922871" duration="1152000" />
       <workItem from="1560444523762" duration="10793000" />
-      <workItem from="1560490484854" duration="5917000" />
+      <workItem from="1560490484854" duration="8701000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist&#10;Сашка поправил move()">
       <created>1558692999009</created>
@@ -989,17 +1010,31 @@
       <option name="project" value="LOCAL" />
       <updated>1560449336059</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Default Changelist">
+      <created>1560498152412</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1560498152412</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Default Changelist">
+      <created>1560498818794</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1560498818794</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="335269000" />
+    <option name="totallyTimeSpent" value="338053000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22617246" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.115733735" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -1008,7 +1043,7 @@
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32843137" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.33044422" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.20751634" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.20751634" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.22222222" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1042,7 +1077,8 @@
     <MESSAGE value="Default Changelist&#10;выбрасываем статтьи&#10;добавил заголовок&#10;переместил html&#10;включил в проект js&#10;работа с 404 и со стилями&#10;&#10;получили куки и проверили в js&#10;personalCabinet" />
     <MESSAGE value="Default Changelist&#10;&#10;выставил экраны на месаги" />
     <MESSAGE value="Default Changelist&#10;&#10;выставил экраны на месаги&#10;доработать личній каб - если кука сдохла" />
-    <option name="LAST_COMMIT_MESSAGE" value="Default Changelist&#10;&#10;выставил экраны на месаги&#10;доработать личній каб - если кука сдохла" />
+    <MESSAGE value="Default Changelist" />
+    <option name="LAST_COMMIT_MESSAGE" value="Default Changelist" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1058,7 +1094,7 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url />
+          <url>file://$PROJECT_DIR$/Команда А/js/main.js</url>
           <line>69</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
@@ -1299,13 +1335,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/action/writeMessage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" selection-start-line="28" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/action/out.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1320,16 +1349,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/config/db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="89" column="19" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
-          <folding>
-            <element signature="e#6#441#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/style/newpost.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
@@ -1340,21 +1359,38 @@
     <entry file="file://$PROJECT_DIR$/blog/views/personalCabinet.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/views/newMessage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/config/updatePhoto.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+        <state relative-caret-position="233">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views/newMessage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="70" column="22" selection-start-line="70" selection-start-column="22" selection-end-line="70" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/config/db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="862">
+          <caret line="89" column="19" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
+          <folding>
+            <element signature="e#6#441#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/action/writeMessage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="31" column="15" lean-forward="true" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
         </state>
       </provider>
     </entry>

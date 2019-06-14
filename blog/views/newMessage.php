@@ -42,21 +42,35 @@ session_start();
             <?php
             if ($_SESSION['msg']) {
                 echo $_SESSION['msg'];
-                unset($_SESSION['msg']);
+
+                $local_img = $_SESSION['img'];//переменная для записи в бд
+//                unset($_SESSION['msg']);
+//                unset($_SESSION['img']);
+                echo $_SESSION['img'];
+
             }
+            $_SESSION['msg'];
             ?>
 
         </div>
         <div class="right">
             <div class="head-message">
-                <form action="../action/writeMessage.php" method="post"
-                ">
 
-                <label>Заголовок</label>
-                <input type="text" name="head">
-                <label name="user_id"></label>
-                <textarea name="message" id="" cols="30" rows="10"></textarea>
-                <input class="but" type="submit" onclick="window.location='../action/writeMessage.php';">
+                <form action="../action/writeMessage.php" method="post">
+                    $_SESSION['img'];
+
+                    <label>Заголовок</label>
+                    <input type="text" name="head">
+                    <label name="user_id"></label>
+                    <textarea name="message" id="" cols="30" rows="10"></textarea>
+                    <input name="img" value=" <?php
+                    echo $_SESSION['img'];
+                    unset($_SESSION);
+
+
+                    ?>">
+                       </input>
+                    <input class="but" type="submit" onclick="window.location='../action/writeMessage.php';">
                 </form>
             </div>
 
