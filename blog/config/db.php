@@ -25,6 +25,7 @@ function connect($arr = [
     $dbname = $arr['dbname'];
 
     $connection = new mysqli($servername, $username, $password, $dbname);
+    $connection->set_charset('utf8');
     if ($connection->connect_error) {
         die('ERROR : ' . $connection->connect_error);
     }
@@ -80,6 +81,19 @@ function createUserMessage($tablename, $arr = [//todo проверку ввод�
 //read message and user
 //' ORDER BY datatime DESC'
 //для личного кабинета
+function readUser($id){//вот что делает плохо сформированый запрос
+    $list = [];
+    $sql = 'SELECT photo FROM users where id='.$id;
+//    echo $sql;
+    $result = connect()->query($sql);
+    while ($row = $result->fetch_assoc()) {
+        return $row;
+    }
+
+
+
+
+}
 function readPersCab($tablename,$id){
     $list = [];
     $sql = 'SELECT * FROM ' . $tablename.' where user_id='.$id.' ORDER BY datatime DESC';

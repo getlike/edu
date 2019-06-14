@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -26,19 +26,30 @@
             ?>
 
 		</header>
+        <?php 
+                            include '../config/db.php';
+                $arrMessage=readUserMessage('message');
+         ?>
 		<div class="main_text">
 			<div class="left" >
 				<div class="search_left">
 					<img src="../img/icons/icon_search.svg" alt=""><input type="search" placeholder="Search">
 				</div>
+                <div class="minicontent">
+                    <ul>
+                        <?php foreach ($arrMessage as $key => $mesagge) {
+                            echo '<li class="licontent" name="'.$mesagge['head'].'">'.$mesagge['head'].'</li>';
+                        } ?>
+                        
+                    </ul>
+                </div>
 			</div>
 			<div class="right">
                 <?php
                 //прочитать сообщения из бд через напрямую через bd.php
                 //заполнять по мере чтения из бд
 
-                include '../config/db.php';
-                $arrMessage=readUserMessage('message');
+
              /*
 
 )*/
@@ -65,6 +76,6 @@
 
 		<footer>TeamBest - Ми старалися!</footer>
 	</div>
-
+    <script src="../js/leftmenu.js"></script>
 </body>
 </html>

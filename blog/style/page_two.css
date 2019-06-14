@@ -1,4 +1,4 @@
-* {
+﻿* {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
@@ -62,6 +62,16 @@ header .logo_img img {
 	outline: none;
 	background: none;
 	color: white;
+}
+.minicontent {
+	margin: 15px;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    font-family: 'Raleway', sans-serif;
+}
+.minicontent li {
+	margin: 5px;
 }
 .right {
 	width: 70%;

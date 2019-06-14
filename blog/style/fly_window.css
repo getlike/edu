@@ -1,0 +1,23 @@
+﻿.avatar { /*всплывающий аватар*/
+		background: white;
+		margin-left: 500px;
+		height: 400px;
+		width: 400px;
+		border-radius: 15px;
+		border: 3px solid green;
+		margin-bottom: 0px;
+		position: absolute;
+		margin-top: 100px;
+	}
+
+		.close {/*кнопка закрыть всплывающего аватара*/
+			background: red;
+			height: 20px;
+			width: 20px;
+			border-radius: 20px;
+			border: 3px solid green;
+			position: relative;
+			margin-left: 855px;
+			cursor: pointer;
+			margin-top: 105px;
+		}

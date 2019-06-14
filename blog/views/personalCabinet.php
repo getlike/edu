@@ -1,19 +1,22 @@
 <?php
 //это персональный кабинет доступный после прохождения регистрации
 //и я понимаю что здесь нарушена логика mvc и не только здесь, но я неуспеваю ))
+include '../config/db.php';
 ?>
 <!doctype html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../style/personalCabinet.css">
+    <link rel="stylesheet" href="../style/fly_window.css">
     <title>Персональный кабинет</title>
 </head>
 <body>
 <header></header>
 <div class="personal">
     <div class="photo">
-        <img src="../img/15minute.jpg" alt="">
+<!--        выгружаем фото пользователя юзая куку. Гугл спид меня возненавидит а недохацкеры возлюбят-->
+        <img src="<?php echo readUser($_COOKIE['user_id'])['photo'];?>" alt="">
     </div>
 <!--    <div class="info-user">-->
 <!--        <h3>username</h3>-->
@@ -28,10 +31,14 @@
     <div class="messages">
 
         <?php
+
         //прочитать сообщения из бд через напрямую через bd.php
         //заполнять по мере чтения из бд
 
-        include '../config/db.php';
+
+
+
+
 if (isset($_COOKIE['user_id'])){
         $id = $_COOKIE['user_id'];
         $arrMessage = readPersCab('message',$id);//масив сообщений
@@ -49,8 +56,7 @@ if (isset($_COOKIE['user_id'])){
                     '<p>' . $value['message'] . '<br>' . '</p>' .
                     $value['datatime'];
 //                     echo $value['message'] . '<br>';
-                echo '</div>';
-            }
+                echo '</div>';}
             //todo куда засунуть автора?
 //
         }
@@ -65,7 +71,7 @@ else{
 
 
     </div>
-
 </div>
+<script type="text/javascript" src="../js/fly_window.js" ></script>
 </body>
 </html>

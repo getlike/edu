@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 ?>
 <!doctype html>
 <html lang="ru">
@@ -32,21 +32,32 @@
     </header>
     <div class="main_text">
         <div class="left">
-            <form action="updatePhoto.php" method="post" enctype="multipart/form-data">
-                <div class="photo-message" style="color: white;">photo</div>
-                <input class="but" type="submit">
+            <!-- Тип кодирования данных, enctype, ДОЛЖЕН БЫТЬ указан ИМЕННО так -->
+            <form enctype="multipart/form-data" action="../config/updatePhoto.php" method="POST" class="photo-message">
+
+                <input type="file" name="img">
+                <input type="submit" name="upload">
+
             </form>
+            <?php
+            if ($_SESSION['msg']) {
+                echo 'sess';
+                echo $_SESSION['msg'];
+                unset($_SESSION['msg']);
+            }
+            ?>
 
         </div>
         <div class="right">
             <div class="head-message">
-                <form action="../action/writeMessage.php" method="post">
+                <form action="../action/writeMessage.php" method="post"
+                ">
 
-                    <label>Заголовок</label>
-                    <input type="text" name="head">
-                    <label name="user_id"></label>
-                    <textarea name="message" id="" cols="30" rows="10"></textarea>
-                    <input class="but" type="submit" onclick="window.location='../action/writeMessage.php';">
+                <label>Заголовок</label>
+                <input type="text" name="head">
+                <label name="user_id"></label>
+                <textarea name="message" id="" cols="30" rows="10"></textarea>
+                <input class="but" type="submit" onclick="window.location='../action/writeMessage.php';">
                 </form>
             </div>
 
