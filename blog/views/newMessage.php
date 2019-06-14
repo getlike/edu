@@ -41,7 +41,6 @@ session_start();
             </form>
             <?php
             if ($_SESSION['msg']) {
-                echo 'sess';
                 echo $_SESSION['msg'];
                 unset($_SESSION['msg']);
             }

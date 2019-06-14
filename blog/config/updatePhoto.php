@@ -14,7 +14,7 @@ if (!empty($_FILES['img']['tmp_name'])) {
 //много много проверок еще крутить(((
 //        case
 //}
-    if (!move_uploaded_file($_FILES['img']['tmp_name'], '../img/' . $_FILES['img']['name'])) {//что и куда грузим
+    if (!move_uploaded_file($_FILES['img']['tmp_name'], '../img/imgMess/' . $_FILES['img']['name'])) {//что и куда грузим
         $_SESSION['msg'] = 'file not uploadet';
         header('Location: ../views/newMessage.php');
     }
