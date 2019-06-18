@@ -21,8 +21,8 @@ if (!empty($_FILES['img']['tmp_name'])) {
 
     $_SESSION['msg'] = 'файл успешно загружен';//тут привязать к пользователю
     $_SESSION['img'] = '../img/imgMess/' . $_FILES['img']['name'];
-
-    header('Location: ../views/newMessage.php');
+echo 'all_done';
+//    header('Location: ../views/newMessage.php');
 
 } else {//если все ок возвращаем сообщение и адрес картинки
     $_SESSION['msg'] = 'file not uploadet';

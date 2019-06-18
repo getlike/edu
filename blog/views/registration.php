@@ -27,6 +27,7 @@
         </a>
 
 	</form>
-
+<!-- <h1>Регистрация временно недоступна ¯\_(ツ)_/¯ </h1>
+<img src="https://demotivatorium.ru/sstorage/3/2017/05/31141804456049/demotivatorium_ru_madam_ja_starij_soldat_136109.jpg" alt=""> -->
 </body>
 </html>

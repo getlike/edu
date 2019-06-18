@@ -1,0 +1,9 @@
+юзвери:
+    id
+    nikname
+    picture
+посты
+    id
+    id_user
+    to_user_id
+    datatime

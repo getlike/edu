@@ -21,7 +21,11 @@ foreach ($list as $value) {
                header('Location: /views/personalCabinet.php');
            }
            else{
-               echo 'password is wrong';
+               echo ' совпадений не найдено <hr>';
+               echo "<a href=\"../views/login.php\">ввести данные еще раз</a><hr>
+<a href=\"../views/registration.php\">зарегистрировать новые</a><hr>
+<a href=\"../views/index.php\">на главную</a>";
+               /////////////////////////////////////////////////////////////
            }
            //echo 'findUser <b>'.$username.'</b> with id '.$value['id'].'<hr>';
        }
@@ -30,6 +34,7 @@ foreach ($list as $value) {
 //       }
 
 }
-echo 'совпадений не найдено';
+
 
 ?>
+

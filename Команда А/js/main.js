@@ -1,260 +1,219 @@
-var gameField = document.querySelector(".game_field");
-var plane = document.querySelector(".airplane");
-plane.style.display = "none";
+var taskList;
+var taskDetails;
+	
+var userNum = 0;
+var userOffset = 20;
+var userCount = 0;
+var userMSG = "Message ";
 
-//функциональные переменные
-var score = 0;
-var i = 0;
+var users;
+var messages;
 
-createStartGame();
+/*--------      ---------   START     --------      -------*/
 
-function createStartGame(elem) { //меню старта
-    console.log("func startGame");
-    var start = document.createElement("div");//блок старта
-    start.className = "start";
-    gameField.appendChild(start);
-
-    var btnStart = document.createElement("button");//кнопка старта игры
-    btnStart.className = "btnStart";
-    btnStart.innerText = "Start Game?";
-    start.appendChild(btnStart);
-    btnStart.onclick = function () {//событие при нажатии
-        createScoreBlock();
-        createEnemy();
-//        enemyMove();
-        createLifeBlock();
-        plane.style.display = "block";
-        start.remove();
-
-        //listenKey();
-
-    }
-
-}
-
-//да простят меня потомки
-//===============================
-//клавиши без пропуска
-//===============================
-var state = true;
-var counter = 0;
-
-var pressed = [1024];
-
-function Down(e) {
-    cxc = e.keyCode;
-    pressed[cxc] = 1;
-    if (cxc == 27) {
-        state = false;
-    } //escape
-}
-
-function Up(e) {
-    cxc = e.keyCode;
-    pressed[cxc] = 0;
-}
-
-document.onkeydown = function (event) {
-    Down(event);
-};
-document.onkeyup = function (event) {
-    Up(event);
-};
+	createChatStructure();
+//	createtaskList_old(10,0);
+// 	createtaskList(10,0);
 
 
-//------------------------
-var Loop = function () {
-    var s = "";
-    if (state) {
-        for (var j = 37; j < 41; j++) {
-            s = s + " " + parseInt(pressed[j], 10);
-        }
+		
+/*--------      ---------   START     --------  end  -------*/
+ 	var searchInput = document.querySelector("#search-bar"); 
+ 	console.dir(searchInput);
+ 	searchInput.placeholder = "Type search phrase and press ENTER";
+// 	earchInput.defaultValue = "Type search phrase and press ENTER";
 
-        move(s);
+/*========================FUNCTIONS=========================*/
 
-        counter = counter + 1;
+/*------------------создание структуры страницы-----------------*/
+/*------------------поблочное создание элементов-----------------*/
 
-        gLoop = setTimeout(Loop, 1000 / 50);
-    }
-};
+	function createChatStructure()			
+	{
+	var app = document.createElement("div");		//общий блок "страница"
+		app.id = "app";
+		document.body.appendChild(app);
 
-Loop();
-//===============================
-//клавиши без пропуска
-//===============================
-// document.onkeydown = function (event) {
-//
-//
-// 	console.dir(event.key);
-// 	shotRemove(); //запускаэ функ видалення пострілів при будь якій дії
-// 	if (event.key == " ") {//при натисканні на "пробел"
-// shot();
-// 	}
-// move(event)
-// }
+	var field = document.createElement("div");		//общий блок "поле"
+		field.id = 'field';
+		app.appendChild(field);
 
-function move(s) {
-    //0100 up
-    //0001 down
-    //1000 left
-    //0010 right
-    console.log(s)
-    if (plane.offsetTop > 0 && s == ' 0 1 0 0') { //вверх піднявся//хуясе он резкий
-        plane.style.top = plane.offsetTop - 30 + "px";
-    }
-    if ((plane.offsetTop < gameField.clientHeight - plane.clientHeight) && (s == ' 0 0 0 1')) { //вниз опустився
-        plane.style.top = plane.offsetTop + 30 + "px";
-    }
-    // if ((plane.offsetLeft < gameField.clientWidth - plane.clientWidth) && (event.key == "ArrowRight")) {//рух вправо
-    // 	plane.style.left = plane.offsetLeft + 30 + "px";
-    // }
-    // if ((plane.offsetLeft > 0) && (event.keyCode == "ArrowLeft")) {//рух вліво
-    // 	plane.style.left = plane.offsetLeft - 30 + "px";
-    // }
-}
+	var header = document.createElement("header");	//блок "хэдэр"
+		field.insertBefore(header, main);
 
-function shot() {//создать выстрел
-    var shotBlock = document.createElement("div"); //створили елемент
-    shotBlock.className = "shot";
-    gameField.appendChild(shotBlock);
-    shotBlock.style.top = plane.offsetTop + plane.clientHeight / 2 - 5 + "px"; //позиція для м'ячика
-    shotBlock.style.left = plane.offsetLeft + plane.clientWidth + "px";
-    moveShotBlock(shotBlock);
-}
+	/*	var logo = document.createElement("a");				
+			logo.className = "logo";
+			logo.href = "9dz.html"; 
+			header.appendChild(logo);
+	*/	
+		var chatName = document.createElement("h1");	//"название страницы" в хэдере
+			chatName.innerText = "Your Personal Time Organizer";
+			header.appendChild(chatName);
+		
+		var RegLogBlock = document.createElement("div");//субблок "авторизация" в хэдере
+			RegLogBlock.className = "nav";
+			header.appendChild(RegLogBlock);
+		
+			var login = document.createElement("a");	//LogOut и ссылка на  стартовую страницу 
+				login.innerText = "LogOut";
+				login.href = "../index.php";
+				RegLogBlock.appendChild(login);
 
-//движение пули
-function moveShotBlock(event) {//event = "пуля".
-    var scoreBlock = document.querySelector(".score");
-    var enemyBlock = document.querySelector(".enemyBlock");
-    shotInterval = setInterval(function () {
-        event.style.left = event.offsetLeft + 10 + "px";// кожну секунду добавляє по значенню, щоб рухалося
-        if (event.offsetLeft == (enemyBlock.offsetLeft + enemyBlock.clientWidth) && (enemyBlock.offsetTop)) {
-            enemyBlock.remove();
-            score = score + 1;
-            scoreBlock.innerHTML = "<h2>Score: <span>" + score + " </span></h2>";
-            if (score >= 7) {
-                clearInterval(shotInterval);
-                enemyBlock.remove();
-                event.remove();
-                plane.remove();
-                createEndGame();
-            }
-        }
-        shotRemove(); //та видаляє
-    }, 1);
-}
+	
+	var main = document.createElement("div");			//общий блок для "список задач" + "детали задач"
+		main.id = 'main';
+		field.appendChild(main);
 
-function shotRemove() { //фун-я видалення пострілів
-    var removeElements = document.querySelectorAll(".shot"); //вибрати дівчик шот
-    for (var i = 0; i < removeElements.length; i++) { //цикл по прикладу на сайті
-        if (removeElements[i].offsetLeft >= gameField.clientWidth) {
-            removeElements[i].remove()
-        }
-    }
-}
+	var leftSidebar = document.createElement("div");		// блок для "список задач" 
+		leftSidebar.id = 'left-sidebar';
+		main.appendChild(leftSidebar);
 
-function createEndGame() { //меню оканчания игры
-    var end = document.createElement("div"); //блок окончания игры
-    end.id = "end";
-    end.innerHTML = "<p>You Win</p>"; //результат игры (или You Win!)
-    gameField.appendChild(end);
+		var searchBar = document.createElement("input");		// блок для "поиска" 
+			searchBar.id = 'search-bar';
+			searchBar.setAttribute('disabled', 'disabled');		//**--   в стадии разработки   --**
+			leftSidebar.appendChild(searchBar);
+			
+		var sortList = document.createElement("select");		// блок для "сортировки" 
+			sortList.id = 'sort-list';
+			sortList.innerHTML = 
+			"<option>importance</option>"+						//**--   в стадии разработки   --**
+			"<option disabled>duration</option>"+				//
+			"<option disabled>difficulty</option>"+				//
+			"<option disabled>oldest</option>"+					//
+			"<option disabled>newest</option>";					//
+			leftSidebar.appendChild(sortList);
 
-    var btnEnd = document.createElement("button");//кнопка перезапуска
-    btnEnd.innerText = "Restart Game?";
-    end.appendChild(btnEnd);
-    btnEnd.onclick = function () {
-        location.reload();
-    }
-}
+			taskList = document.createElement("ul");				//создание и размещение списка
+			taskList.id = 'task-list';
+			leftSidebar.appendChild(taskList);
 
-//Ф-ція створення блоку Очків
-function createScoreBlock() {
-    var score = document.createElement("div");
-    score.className = "score";
-    score.innerHTML = "<h2>Score: <span>0</span></h2>";
-    gameField.appendChild(score);
-}
+	var centerBar = document.createElement("div");			// центральный блок 
+		centerBar.id = 'center-bar';
+		main.appendChild(centerBar);
+	
+		var taskDetails = document.createElement("form"); 	// создание формы 
+			taskDetails.action = "";
+			taskDetails.method = "post";
+	//		taskDetails.style.border = "solid 2px black";
+			taskDetails.id = 'task-details';
+		centerBar.appendChild(taskDetails);
 
-function createLifeBlock() { //блок права на ошибку
-    var lifeBlock = document.createElement("div"); //контейнер блока
-    lifeBlock.id = "lifes";
-    lifeBlock.innerText = "Lifes: "; //вложеный текст в контейнер
-    gameField.appendChild(lifeBlock);
-    console.log(lifeBlock);
-    var lifeSpan1 = document.createElement("span"); //1-я попытка
-    lifes.appendChild(lifeSpan1);
+		var taskName = document.createElement("input");  	// блок "имя задачи" 
+			taskName.type = "text";
+			taskName.className = "input-task";
+			taskName.name = "taskname";
+			taskName.placeholder = " Enter your task name";
+		taskDetails.appendChild(taskName);
+	
+		var taskDescription = document.createElement("textarea");		// блок  "описание задачи" 
+			taskDescription.type = "text";
+			taskDescription.className = "input-desc";
+			taskDescription.name = "taskdescription";
+			taskDescription.placeholder = " Enter your task description ";
+		taskDetails.appendChild(taskDescription);
+		
+		var selectbox = document.createElement("div");					// блок  "селектов" 
+			selectbox.id = 'selectbox';
+		taskDetails.appendChild(selectbox);
+		
+			var taskImportance =  document.createElement("select");		// блок  "выбора важности задачи" 
+				taskImportance.name = 'taskimportance';
+				taskImportance.id = 'task-importance';
+				taskImportance.innerHTML = 
+					"<option disabled>importance</option>"+
+				    "<option value='1'>1</option>"+
+				    "<option value='2'>2</option>"+
+				    "<option value='3'>3</option>"+
+				    "<option value='4'>4</option>"+
+				    "<option value='5'>5</option>";
+				taskImportance.firstChild.defaultSelected = true;
+			selectbox.appendChild(taskImportance);
+			
+			var taskDuration =  document.createElement("select");		// блок  "выбора времени выполнения задачи" 
+		        console.log("taskDuration");
+		        console.dir(taskDuration);
+		        taskDuration.id = 'task-duration';
+		        taskDuration.name = 'taskduration';
+		        taskDuration.innerHTML = 
+		          "<option disabled>duration</option>"+
+		          "<option value='1'>5min</option>"+
+		          "<option value='2'>30min</option>"+
+		          "<option value='3'>1hour</option>"+
+		          "<option value='4'>2hours</option>"+
+		          "<option value='5'>more</option>";
+		        taskDuration.firstChild.defaultSelected = true;
+		        selectbox.appendChild(taskDuration);		
+			
+			var taskDifficulty =  document.createElement("select");		// блок  "выбора сложности задачи" 
+				taskDifficulty.name = "taskdifficulty";
+				taskDifficulty.id = 'task-difficulty';
+				taskDifficulty.innerHTML = 
+					"<option disabled>difficulty</option>"+
+					"<option value='1'>1</option>"+
+					"<option value='2'>2</option>"+
+					"<option value='3'>3</option>"+
+					"<option value='4'>4</option>"+
+					"<option value='5'>5</option>";
+				taskDifficulty.firstChild.defaultSelected = true;
+				selectbox.appendChild(taskDifficulty);	
+				
+		var datebox = document.createElement("div");					// блок  "дат"  
+			datebox.id = 'datebox';
+		taskDetails.appendChild(datebox);
+			
+			var taskLifetime = document.createElement("input");			// блок  "выбора даты актуальности задачи"
+				taskLifetime.id  = 'localdate';
+				taskLifetime.name = "date";
+				taskLifetime.type  = 'datetime-local';
+				datebox.appendChild(taskLifetime);
+			console.log("taskLifetime");
+			console.dir(taskLifetime);
+			
+			var taskAlarm = document.createElement("input");			// блок  "выбора даты и времени напоминания "
+				taskAlarm.id  = 'alarmdate';
+				taskAlarm.name = "alarm";
+				taskAlarm.type  = 'datetime-local';
+				datebox.appendChild(taskAlarm);
+			console.log("taskAlarm");
+			console.dir(taskAlarm);
+			
+		var buttonbox = document.createElement("div");				// блок  кнопок
+			buttonbox.id = 'buttonbox';
+			taskDetails.appendChild(buttonbox);
+			
+			var deleteButton =  document.createElement("button");	// кнопка удаления задачи
+				console.log("deleteButton");
+				console.dir(deleteButton);
+				deleteButton.id = 'delete-button';
+				deleteButton.innerText = "delete";
+				buttonbox.appendChild(deleteButton);
+			
+			var updateButton =  document.createElement("button");	// кнопка обновления  задачи
+				console.log("updateButton");
+				console.dir(updateButton);
+				updateButton.id = 'update-button';
+				updateButton.innerText = "update";
+				buttonbox.appendChild(updateButton);
+			
+			var createButton =  document.createElement("button");	// кнопка создания задачи
+				console.log("createButton");
+				console.dir(createButton);
+				createButton.id = 'create-button';
+				createButton.innerText = "create";
+				createButton.type = "submit";
+				createButton.name = "submit";
+				buttonbox.appendChild(createButton);
 
-    var lifeSpan2 = document.createElement("span"); //2-я попытка
-    lifes.appendChild(lifeSpan2);
+		
+	//---------------------------------------------------
 
-    var lifeSpan3 = document.createElement("span"); //3-я попытка
-    lifes.appendChild(lifeSpan3);
-}
+	}
 
-//обьявляем функцию!!!
+/*------------------создание структуры страницы-----------end---*/
 
-function createEnemy() {
-    var enemyBlock = document.createElement("div");
-    enemyBlock.className = ("enemyBlock");
-    //console.dir(enemyBlock);
-    gameField.appendChild(enemyBlock);
-    // создания врага слева
-    enemyBlock.style.left = gameField.clientWidth - 0 + "px";
-    enemyBlock.style.top = random(50, gameField.clientHeight) + "px";//тут виправив Ростислав
-}
 
-// var enemyBlock = document.querySelector(".enemyBlock");
-// if (enemyBlock == null) {
-//		createRandomEnemy();
-//	}
 
-createRandomEnemy();
 
-function createRandomEnemy() {
-    while (i < random(7, 10)) {
-        createEnemy();
-        i = i + 1;
-    }
-}
 
-function enemyMove() {//ф-ция движения врага
-    var IntervalLeft = setInterval(function () {
-        var block = document.querySelector(".enemyBlock");
-        if (block.offsetLeft >= 0) {
-            block.style.left = block.offsetLeft - 2 + 'px';
-        } else {
-            block.remove();//Удаление преграды когда она достигает 0 координаты
-            createEnemy();
-        }
-    }, 10);
-    enemyMoveUp();
-}
 
-function enemyMoveUp() {//ф-ция движения врага
-    var IntervalTop = setInterval(function () {
-        var block = document.querySelector(".enemyBlock");
-        block.style.top = block.offsetTop - 2 + "px";
-        if (block.offsetTop <= 0) {
-            clearInterval(IntervalTop);
-            enemyMoveDown();
-        }
-    }, 10)
-}
 
-function enemyMoveDown() {//ф-ция движения врага
-    var IntervalDown = setInterval(function () {
-        var block = document.querySelector(".enemyBlock");
-        block.style.top = block.offsetTop + 2 + "px";
-        if (block.offsetTop >= gameField.clientHeight - block.clientHeight) {
-            clearInterval(IntervalDown);
-            enemyMoveUp();
-        }
-    }, 10)
-}
-
-//Рандом
-function random(min, max) {
-    var rand = min + Math.random() * (max + 1 - min);
-    rand = Math.floor(rand);
-    return rand;
-}

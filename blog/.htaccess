@@ -1,15 +1,15 @@
-#DirectoryIndex index.html
-#AddDefaultCharset UTF-8
-#php_value upload_max_filesize 10M
-#
-#php_flag  log_errors on
-#php_value error_log  errors/PHP_errors.log
-#
+DirectoryIndex index.html
+AddDefaultCharset UTF-8
+php_value upload_max_filesize 10M
+
+php_flag  log_errors on
+php_value error_log  errors/PHP_errors.log
+
 ##url
-#
-#RewriteCond %{THE_REQUEST} " /index\.php\?do=/([^ &]*)"
-#RewriteRule ^ https://danfa.net/%1? [R=301,L]
-#
+
+RewriteCond %{THE_REQUEST} " /index\.php\?do=/([^ &]*)"
+RewriteRule ^ https://danfa.net/%1? [R=301,L]
+
 ##ErrorDocument 500 /error500.htm
 #
 ##ErrorDocument 404 https://9gag.com/404s

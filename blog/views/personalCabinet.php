@@ -2,6 +2,7 @@
 //это персональный кабинет доступный после прохождения регистрации
 //и я понимаю что здесь нарушена логика mvc и не только здесь, но я неуспеваю ))
 include '../config/db.php';
+$photouser= readUser($_COOKIE['user_id'])['photo'];
 ?>
 <!doctype html>
 <html lang="ru">
@@ -15,8 +16,7 @@ include '../config/db.php';
 <header></header>
 <div class="personal">
     <div class="photo">
-<!--        выгружаем фото пользователя юзая куку. Гугл спид меня возненавидит а недохацкеры возлюбят-->
-        <img src="<?php echo readUser($_COOKIE['user_id'])['photo'];?>" alt="">
+        <img src="<?php echo $photouser?>" alt="">
     </div>
 <!--    <div class="info-user">-->
 <!--        <h3>username</h3>-->

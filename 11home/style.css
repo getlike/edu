@@ -1,0 +1,91 @@
+
+body {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+header {
+    background: #bce6e6;
+    height: 100px;
+    box-shadow: 0 0 10px #000;
+    border-radius: 10px;
+}
+
+.main {
+    background: #b8c356;
+    padding-top: 10px;
+    position: relative;
+    box-shadow: 0 0 10px #000;
+    height: 450px;
+    border: 1px solid black;
+    margin-top: 15px;
+}
+
+
+    .left-bar {
+        background:#00d9ff;
+        position: absolute;
+        width: 19%;
+        left: 3px;
+        height: 80%;
+        border: 2px solid black;
+    }
+        .left-bar ul{
+            position: relative;
+            list-style-type: none; /* Убираем маркеры */
+        }
+        .left-bar li{
+            margin: 5px;
+        }
+            .photo img{
+                border: 1px solid aliceblue;
+                left: 2px;
+                position: absolute;
+                width: 62px;
+                height: 60px;
+                border-radius: 50%;
+            }
+                /*.photo img{*/
+                /*    position: absolute;*/
+                /*}*/
+            .data-user{
+                border: 1px solid #ff1d17;
+                margin-left: 30px;
+                margin-right: 3px;
+                overflow: hidden;
+
+            }
+
+    .right-bar {
+        background:#00d9ff;
+
+        position: absolute;
+        right: 3px;
+        width: 80%;
+        height: 80%;
+        border: 2px solid black;
+    }
+
+    .down-bar {
+        position: absolute;
+        bottom: 10px;
+        right: 5px;
+        box-shadow: 0 0 10px #1f9528;
+
+    }
+        .send-word{
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .inner{
+            padding-left: 15px;
+            box-shadow: 0 0 10px #000;
+            width: 500px;
+
+
+        }

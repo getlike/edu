@@ -74,7 +74,7 @@
 			</div>
 		</div>
 
-		<footer>TeamBest - Ми старалися!</footer>
+		<footer><img src="../img/foot.jpg" class="footerImg" alt=""></footer>
 	</div>
     <script src="../js/leftmenu.js"></script>
 </body>

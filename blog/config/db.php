@@ -76,6 +76,8 @@ function createUserMessage($tablename, $arr = [//todo проверку ввод�
 
     }
     connect()->close();//от греха подальше
+    header('Location: /views/login.php');
+
 }
 
 //read message and user

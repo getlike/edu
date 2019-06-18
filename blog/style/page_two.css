@@ -1,4 +1,7 @@
-﻿* {
+﻿.logo_img img{
+	width: 90px;
+}
+* {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
@@ -107,3 +110,7 @@ background: rgba(112, 158, 152, 0.48);
 		color: white;
 		font-family: monospace;
 	}
+.footerImg{
+	height: 45px;
+	z-index: 99;
+}

@@ -24,5 +24,6 @@ if (req){
         $string .= substr($chars, rand(1, $numChars) - 1, 1);
     }
     return $string;
+
 }
 ?>
