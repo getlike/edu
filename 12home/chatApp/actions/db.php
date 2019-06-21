@@ -65,3 +65,11 @@ function deleteUser($id){
 //изменить имя пользователя
 //UPDATE `users` SET `username` = 'яДобави' WHERE `users`.`id` = 17;
 
+//addU
+function addUser($username,$password,$email){
+    //INSERT INTO `users` (`username`, `password`, `email`) VALUES (NULL, 'sql', 'views/img/simba.png', 'qls', 'test@i.ua');
+    $sql = 'INSERT INTO `users` (username, password, email) VALUES ('.$username.','.$password.','.$email.');';
+    echo $sql;
+    connect()->query($sql);
+    connect()->close();
+}

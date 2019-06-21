@@ -19,7 +19,7 @@ include 'db.php';
         <tbody>
         <tr>
             <th>username</th>
-            <th>img</th>
+            <th>password</th>
 
             <th>email</th>
             <th>delete</th>
@@ -59,7 +59,12 @@ echo '</tr>';
 
         </tbody>
     </table>
-
+    <form action="addUser.php" method="POST">
+        <input type="text"placeholder="user" name="username">
+        <input type="text" placeholder="password"name="password">
+        <input type="text" plaseholder="email" name="email">
+        <input type="submit">
+    </form>
 </table>
 </body>
 </html>

@@ -1,0 +1,124 @@
+body {
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/back.jpg);		
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.container {
+	width: 300px;
+	height: 400px;
+/*	background: #508;	*/
+	background: #2d2727;
+	top: 200px;
+	left: calc(50% - 150px);
+	border-radius: 2%;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	position: absolute;
+	opacity: 0;
+	transition: all .5s;
+}
+ 
+	 h2 {
+	 	top: 2%;
+	 	color: #e8b48f;
+		left: calc(27%);
+	 	position: absolute;
+	 }
+
+	 h3 {
+	 	top: 2%;
+	 	color: #e8b48f;
+	 	font-size: 25px;
+		left: calc(35%);
+	 	position: absolute;
+	 }
+
+	form {
+	width: 100%;
+	height: 60%;
+	top: 12%;
+	left:8%;
+	position: absolute;
+
+	}
+
+	form p{
+		width: 250px;
+	}
+	form p span  {
+    position: absolute;
+    top: 200px;
+    left: 200px;	
+	}
+
+	.input-field {
+		width: 250px;
+		height: 35px;
+		border-radius: 5%;
+	}
+
+
+
+	.btn-reg {
+		width: 253px;
+		height: 40px;
+		top: 240px;
+		font-size: 20px;
+		border-radius: 5%;
+		position: absolute;
+		background: #a8859b;
+	}
+
+	.btn-l {
+		width: 253px;
+		height: 40px;
+		top: 290px;
+		color: #000;
+		font-size: 20px;
+		border-radius: 5%;
+		position: absolute;
+		background: #a8859b;
+	}
+		.btn-l a{
+		text-decoration: none;
+		color:#000;
+	}
+
+	.btn-log {
+		width: 253px;
+		height: 40px;
+		top: 130px;
+		color: #000;
+		font-size: 20px;
+		border-radius: 5%;
+		position: absolute;
+		background: #a8859b;
+	}
+
+	.btn-r {
+		width: 253px;
+		height: 40px;
+		top: 185px;
+		color: #000;
+		font-size: 20px;
+		border-radius: 5%;
+		position: absolute;
+		background: #a8859b;
+	}
+
+		.btn-r a{
+			text-decoration: none;
+			color:#000;
+		}
+
+	
+
+
+	.btn-r:hover, .btn-l:hover, .input-field:hover, .btn-reg:hover, .btn-log:hover {
+/*		background: #EEE;			*/
+		background: #d18e86;
+	}

@@ -1,0 +1,223 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Mukta:700");
+@import url("https://fonts.googleapis.com/css?family=Racing+Sans+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Caveat&display=swap);
+body
+{
+
+	background-image: #2f2e30;
+	margin: auto;
+	font-family: monospace;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/back.jpg);		
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow-x: visible;
+	overflow-y: visible;
+
+}
+/*------------------------------------------------------------*/
+header
+{
+    background: #fff00;
+	height: 50px;
+    padding: 30px;
+	order-bottom: 0px;
+}
+	header .logo
+	{
+		background-size: cover ;
+		width: 100px;
+		height: 100px;
+		float: left;
+	}
+	header  h1	/*селектор*/
+		{
+			font-size: 48px;
+			font-family: 'Indie Flower', cursive;
+			color: #2d2727;
+			float: left;
+			padding-left: 15%;
+			margin: 0;			
+		}
+	header .nav
+	{
+		float: right;
+		padding-right: 10%;
+		
+	}
+		header .nav a		/*селектор*/
+		{
+			font-size: 36px;
+			font-family: 'Indie Flower', cursive;
+			color: #2d2727;
+			margin-left: 20px;
+			text-decoration: none;
+			font-weight: bold;
+		}
+		header .nav a:hover /*псевдоселектор*/
+		{
+/*			color: #c94f3f;*/
+			font-weight: normal;
+		}
+
+/*------------------------------------------------------------*/	
+#main
+{
+	background-image: url(../img/bg.jpg);
+	background-size: cover;									
+	/*margin: 2% 10%;*/
+	margin-left: auto;
+    margin-right: auto;
+	/*margin: 0;*/
+	border: none;
+    width: 80%;
+	height: 1000px;
+    overflow: hidden;
+border:  1px solid #505050;
+}
+		
+#left-sidebar 
+{
+	width: 50%;
+	float: left;
+	height: 100%;
+	
+}
+
+	#search-bar
+	{
+		border:1px solid #82cfe4;
+		width: 230px;
+		height: 20px;
+		float: left;
+		margin-left: 20%;
+		margin-top: 10%;
+	}
+	
+	#sort-list
+	{
+		border:1px solid #82cfe4;
+		width: 100px;
+		height: 24px;
+		float: right;
+		margin-right: 20%;
+		margin-top: 10%;
+	}
+	
+	#UL
+	{
+		width: 25%;
+	/*	overflow: scroll;	*/
+		height: 100%;
+		margin-left: 15%;
+		margin-top: 15%;
+		position: absolute;
+
+	}	
+	
+	#UL li
+		{
+			font-size: 28px;
+			font-family: 'Caveat', cursive;
+			list-style: none; /* убрать маркер списка	*/
+			list-style-position: outside;
+			margin-bottom: 5px;
+			height: 42px;
+			border-bottom: 1px solid #505050;	
+		}
+			
+#center-bar 
+{
+	width: 50%;
+	float: left;
+	height: 100%;
+}
+	#task-details
+	{
+		width: 80%;
+	/*	overflow: scroll;	*/
+		height: 70%;
+		float: left;
+		margin-left: 10%;
+		margin-top: 15%;
+	/*	border:  1px solid #505050;*/
+		
+	}
+		textarea
+		{
+			float: left;
+			width: 80%;
+			height: 20%;
+			resize: none;
+			overflow: auto;
+			margin: 10%  10%    0     7%;
+		/*	margin: top right bottom left*/
+			border:1px solid #82cfe4;
+		}
+		#selectbox, #datebox
+		{
+			float: left;
+			width: 80%;
+			height: 20%;
+			resize: none;
+			overflow: auto;
+			margin: 10% 10% 0 10%;
+		}
+		 #buttonbox
+		{
+			float: left;
+			width: 80%;
+			height: 20%;
+			resize: none;
+			overflow: auto;
+			margin: 1% 5% 0 10%;
+		}
+		#center-bar select
+			{
+				border:1px solid #82cfe4;
+				width: 100px;
+				height: 24px;
+				float: right;
+				margin-right: 10%;
+			}
+		#center-bar input
+			{
+				border:1px solid #82cfe4;
+				width: 170px;
+				height: 24px;
+				float: left;
+				margin-left: 8%;
+				margin-top: 2%;
+			}
+
+		#center-bar button
+			{
+				border:1px solid #82cfe4;
+				width: 100px;
+				height: 24px;
+				float: right;
+				margin-right: 10%;
+				background: #fff
+			}
+			
+		#delete-button:hover 
+			{
+			background: #ff0000a8;
+			}
+		#update-button:hover 
+			{
+			background: #ffe501a8;
+			}
+		#create-button:hover 
+			{
+			background: #00ff00a8;
+			}
+		
+		#task-importance
+		{
+			float: left;
+		}
+
+		

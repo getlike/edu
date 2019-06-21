@@ -26,4 +26,6 @@ if (req){
     return $string;
 
 }
+header('Location: index.php');
+
 ?>
