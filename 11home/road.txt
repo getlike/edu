@@ -2,6 +2,7 @@
     id
     nikname
     picture
+
 посты
     id
     id_user

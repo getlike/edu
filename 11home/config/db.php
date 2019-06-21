@@ -3,7 +3,7 @@ function connect($arr = [
     "servername" => "localhost",
     "username" => "root",
     "password" => "",
-    "dbname" => "blog"
+    "dbname" => "chat"
 ])
 {
     $servername = $arr['servername'];//переопределяем для более сжатой
