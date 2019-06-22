@@ -6,7 +6,9 @@ include '../../partials/header.php';
 ?>
 
 <div class="container">
+    <?php if( $_COOKIE['role']=='admin'){?>
 	<a href="create.php" class="btn">CREATE NEW USER</a>
+    <?php }?>
 	<table id="customers">
 		<tr>
 	    <th>ID</th>
@@ -17,9 +19,8 @@ include '../../partials/header.php';
 	  <?php 
 	  	$sql = "SELECT * FROM users";
 	  	$result = connect()->query($sql);
-	  	while ($row = $result->fetch_assoc()) {
-	  		//@todo current usen not show!!!!
-//            echo $row['id'];
+      while ($row = $result->fetch_assoc()) {
+
 	  		if($row['role'] != 'admin'&& $row['id']!=$_COOKIE['id']) {
 		  		?>
 		  			 <tr>

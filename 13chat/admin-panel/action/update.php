@@ -7,7 +7,7 @@ $email=$_POST['email'];
 $password=$_POST['password'];
 $sql='UPDATE `users` SET `username` = \''.$username.'\', `email` = \''.$email.'\', `password` = \''.$password.'\'  WHERE `users`.`username` = \''.$oldname.'\';';
 connect()->query($sql);
-
+connect()->close();
 header('Location: ../modules/users/edit.php?id='.$id);
 
 

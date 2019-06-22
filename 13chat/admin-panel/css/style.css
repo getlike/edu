@@ -36,9 +36,11 @@ header a.btn {
 }
 
 .container {
+	/*position: relative;*/
 	width: 800px;
 	margin: 0 auto;
 }
+
 
 #customers {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -62,3 +64,4 @@ header a.btn {
   background-color: #4CAF50;
   color: white;
 }
+/*body chat	*/

@@ -19,7 +19,7 @@
                     <a href="/admin-panel/modules/users">Users</a>
                 <?php } ?>
 
-                <a href="/admin-panel/messages.php">Messages</a>
+                <a href="/admin-panel/modules/messages/">Messages</a>
                 <a href="/admin-panel/friends.php">Friend list</a>
             </nav>
 
