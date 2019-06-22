@@ -2,7 +2,7 @@
 include 'configs/db.php';
 include "partials/header.php";
 /*
-* @todo create login form and authorize
+* @todo create login form and authorize - done
 */
 // if(isset($_COOKIE['user_id']) && $_COOKIE['user_id'] != "") {
 // ======================================
@@ -12,11 +12,12 @@ if (!isset($_SERVER['HTTP_COOKIE'])) {
     include 'partials/registration.php';
     echo '</div>';
 }
-// ======================================
-// } else {
-// echo "Login"; // create login form
-// }
-
+else if ($_COOKIE['role']=='admin'){
+    echo '<script>window.location.href = "modules/users/index.php";</script>';
+}
+else{
+    echo 'that part of app in work yet';
+}
 /*
 if user !isset(cookies) && user->role == "admin"
 show login form 
