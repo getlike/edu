@@ -1,4 +1,4 @@
-<?php 
+<?php
 include 'configs/db.php';
 include "partials/header.php";
 /*
@@ -6,12 +6,15 @@ include "partials/header.php";
 */
 // if(isset($_COOKIE['user_id']) && $_COOKIE['user_id'] != "") {
 // ======================================
-	
 
-	echo "TEST";
+if (!isset($_SERVER['HTTP_COOKIE'])) {
+    echo '<div class="container">';
+    include 'partials/registration.php';
+    echo '</div>';
+}
 // ======================================
 // } else {
-	// echo "Login"; // create login form
+// echo "Login"; // create login form
 // }
 
 /*

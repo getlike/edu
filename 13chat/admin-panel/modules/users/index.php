@@ -16,10 +16,11 @@ include '../../partials/header.php';
 	  </tr>
 	  <?php 
 	  	$sql = "SELECT * FROM users";
-	  	$result = $conn->query($sql);
+	  	$result = connect()->query($sql);
 	  	while ($row = $result->fetch_assoc()) {
 	  		//@todo current usen not show!!!!
-	  		if($row['role'] != 'admin') {
+//            echo $row['id'];
+	  		if($row['role'] != 'admin'&& $row['id']!=$_COOKIE['id']) {
 		  		?>
 		  			 <tr>
 					    <td><?php echo $row['id']; ?></td>
