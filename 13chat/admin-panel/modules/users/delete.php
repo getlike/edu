@@ -4,7 +4,8 @@ include '../../configs/db.php';
 $sql = 'DELETE FROM users WHERE `users`.`id` = ' . $_GET['id'];
 $res = connect()->query($sql);
 connect()->close();
-header('Location: index.php');
+//header('Location: index.php');
+echo $sql;
 
 
 /**

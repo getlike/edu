@@ -26,14 +26,15 @@ function readUser($id)
 <div class="container">
     <!--//инпуты-->
     <!--//[id] => 3 [username] => user1 [photo] => /media/cat.jpg [email] => user@i.ua [password] => wassword [role] => user-->
-    <form action="../../action/update.php" method="post">
+    <form action="../../action/update.php" method="post" class="edit-message">
         <p>username</p>
         <input type="text" name="comment" size="40"
                value="<?php echo $list['username'] ?>"
                readonly>
         <input type="text" name="id" value="<?php echo $list['id'] ?>" readonly>
-        <input type="text" value="<?php echo $list['username'] ?>" name="username">
-
+        <p>
+            <input type="text" value="<?php echo $list['username'] ?>" name="username">
+        </p>
         <p>email</p>
         <input type="text" value="<?php echo $list['email'] ?>" name="email">
 

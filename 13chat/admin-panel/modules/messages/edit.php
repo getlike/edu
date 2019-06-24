@@ -17,7 +17,7 @@ function readMessage($id)
 ?>
 <div class="container">
 
-    <form action="../../action/updateMessage.php" method="post">
+    <form action="../../action/updateMessage.php" method="post" class="edit-message">
         <p>позиция вашего сообщения в наших закромах :
             <input type="text" name="id" readonly value="<?php echo $_GET['id'] ?>">
         </p>

@@ -1,24 +1,27 @@
 <?php
 //$sql='UPDATE `users` SET `username` = \''.$username.'\', `email` = \''.$email.'\', `password` = \''.$password.'\'  WHERE `users`.`username` = \''.$oldname.'\';';
+include '../../partials/header.php';
 
 ?>
-<form action="../../action/add.php" method="post">
-    <p>username</p>
+<div class="container">
 
-    <input type="text" placeholder="name" name="username">
+    <form action="../../action/add.php" method="post" class="edit-message">
+        <p>username</p>
 
-    <p>email</p>
-    <input type="text"  placeholder="email" name="email">
+        <input type="text" placeholder="name" name="username">
 
-    <p>password</p>
-    <input type="text" placeholder="password" name="password">
+        <p>email</p>
+        <input type="text" placeholder="email" name="email">
 
-    <hr>
-    <input type="submit">
+        <p>password</p>
+        <input type="text" placeholder="password" name="password">
 
-</form>
+        <hr>
+        <input type="submit">
 
-/**
-* @сделать форму добавления нового пользователя -done
-* @после успешного добавления пользователя делать редирект на страницу со списком пользователей index.php - done
-*/
+    </form>
+</div>
+<!--/**-->
+<!--* @сделать форму добавления нового пользователя -done-->
+<!--* @после успешного добавления пользователя делать редирект на страницу со списком пользователей index.php - done-->
+<!--*/-->

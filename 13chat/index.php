@@ -20,7 +20,8 @@ include 'admin-panel/partials/header.php';
 <!--            <p>lastmessage</p>-->
 <!--        </div>-->
 <!---->
-<a href="admin-panel/">заходи</a>
-
-    </div>
+<h1>
+    <a href="admin-panel/" class="go-in">заходи</a>
+</h1>
+</div>
 </div>

@@ -20,7 +20,7 @@
                 <?php } ?>
 
                 <a href="/admin-panel/modules/messages/">Messages</a>
-                <a href="/admin-panel/friends.php">Friend list</a>
+<!--                <a href="/admin-panel/friends.php">Friend list</a>-->
             </nav>
 
 
