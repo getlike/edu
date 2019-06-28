@@ -1,0 +1,109 @@
+body {
+	margin: 0;
+}
+
+header { 
+	height: 50px;
+	width: 100%;
+	border-bottom: 2px solid #673ab7;
+}
+
+header a {
+	color: #505050;
+    margin: 20px 10px;
+    display: block;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+}
+header a:hover {
+	border-bottom: 1px solid #673ab7;
+}
+header a.active {
+	font-weight: bold;
+	border-bottom: 1px solid #673ab7;
+}
+header a.btn {
+	float: right;
+	border: 1px solid #673ab7;
+	background: #ceceee;
+
+}
+.go-in{
+	padding-top: 72px;
+	width: 200px;
+	height: 100px;
+	background: green;
+	position: absolute;
+	top: 50%;
+	left: 45%;
+	text-align: center;
+	color: whitesmoke;
+}
+.go-in:hover{
+	background: #00b415;
+
+}
+
+.btn {
+	border: 1px solid #673ab7;
+	background: #ceceee;
+	padding: 10px;
+}
+
+.container {
+	/*position: relative;*/
+	width: 800px;
+	margin: 0 auto;
+}
+.edit-message{
+	width: 400px;
+	background: #4CAF50;
+	padding: 30px;
+	margin: 104px;
+	border-radius: 15px;
+	box-shadow: 8px 6px 10px rgba(0,0,0,0.25);
+}
+
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+/*body chat	*/
+footer{
+	color: whitesmoke;
+	position: absolute;
+	bottom: 15px;
+	width: 100%;
+	background: #3b7688;
+}
+@font-face {
+	font-family: Aladdin; /* Имя шрифта */
+	src: url('Aladdin.ttf'); /* Путь к файлу со шрифтом */
+}
+footer p{
+	margin-left: 100px;
+	font-family:'Aladdin';
+font-size: 15pt;
+}
+footer div{
+	margin-left: 100px;
+}
