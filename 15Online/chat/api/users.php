@@ -1,80 +1,96 @@
 <?php
-header('Content-Type: text/html');
-header('Access-Control-Allow-Origin: *');
 
-include '../configs/db.php';
+include "../admin-panel/configs/db.php";
 
+if (isset($_GET['page'])) {
+    switch ($_GET['page']) {
+        case 'friends':
+            //http://ithelper.anovainfo.zzz.com.ua/api/users.php?page=friends&user_id=5
+            getFriens($_GET['user_id']);
+            break;
+        case 'allUsers':
 
-// Получить всех друзей выбранного пользователя
-function getFriends($user_id, $conn) {
-
-	$sql = "SELECT * FROM friends WHERE user_1=$user_id";
-	$result = $conn->query($sql);
-	$friends = [];	
-	if($result->num_rows > 0) {
-		while($row = $result->fetch_assoc()) {
-
-			$sql = "SELECT * FROM users WHERE id=" . $row['user_2'];
-			$resultFriend = $conn->query($sql);
-			if($resultFriend->num_rows > 0) {
-				$friend = $resultFriend->fetch_assoc();
-				$friends[] = [
-					"id" => $friend['id'],
-					"username" => $friend['username'],
-					"photo" => $friend['photo'],
-					"email" => $friend['email']
-				];
-			}
-		}
-	}
-
-	echo json_encode(["friends" => $friends]);
+            getAllUsers();
+            break;
+        case 'message':
+            getMessage($_GET['user_id']);
+            break;
+        default:
+            echo 'niponil';
+    }
 }
-/*
-* @todo как оптимизировать код, убрать дублирование пользователей
-*/
-function searchUser($text, $conn) {
-	$sql = "SELECT * FROM `users` WHERE `username` LIKE '%" . $text . "%'";
-	$result = $conn->query($sql);
-	$users = [];	
+function getMessage($id){
+    $messages = [];
+    $sql = 'SELECT message FROM `messages` WHERE user_id='.$id;
 
-	if($result->num_rows > 0) {
-		while($row = $result->fetch_assoc()) {
-			$users[] = [
-				"id" => $row['id'],
-				"username" => $row['username'],
-				"photo" => $row['photo'],
-				"email" => $row['email']
-			];
-		}
-	}
+    $result = connect()->query($sql);
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            $messages[] = [
+                "mess" => $row['message']
+            ];
 
-	echo json_encode(["users" => $users]);
+
+        }
+        echo json_encode(["messages" => $messages]);
+    }
 }
+function getAllUsers()
+{
+    $users = [];
+    $sql = 'SELECT * from users';
 
-function addFriend($current_user, $user_id, $conn) {
-	$sql = "INSERT INTO `friends` (`user_1`, `user_2`, `status`) VALUES ('$current_user', '$user_id', 'true')";
-	
-	if ($conn->query($sql) === TRUE) {
-	    echo json_encode(["status" => "ok"]);
-	} else {
-	    echo json_encode(["status" => "error"]);
-	}
+    $result = connect()->query($sql);
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            $users[] = [
+                "id" => $row['id'],
+                "username" => $row['username'],
+                "photo" => $row['photo'],
+                "email" => $row['email']
+
+            ];
+
+
+        }
+        echo json_encode(["users" => $users]);
+    }
 }
 
-/*
-* @todo сделать через switch
-*/
-if(isset($_GET['page']) && $_GET['page'] == 'friends') {
-	getFriends($_GET['current_user'], $conn); // !!! $conn !!! -> ** как сделать $conn глобальной
+function getFriens($user_ID)
+{
+    $sql = 'select * from friends where user_1 = ' . $user_ID . ';';
+//echo $sql;
+    $result = connect()->query($sql);
+    $friends = [];
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+//            echo $row['user_2'];
+            //
+            $sqlF = 'SELECT * FROM users WHERE id=' . $row['user_2'];
+//            echo $sqlF;
+            $resultF = connect()->query($sqlF);
+            if ($resultF->num_rows > 0) {
+                $friend = $resultF->fetch_assoc();
+                $friends[] = [
+                    "id" => $friend['id'],
+                    "username" => $friend['username'],
+                    "photo" => $friend['photo'],
+                    "email" => $friend['email']
+
+                ];
+            }
+        }
+        echo json_encode(["friends" => $friends]);
+    }
+
 }
 
-if(isset($_GET['page']) && $_GET['page'] == "search" && isset($_GET['search'])) {
-	searchUser($_GET['search'], $conn);
-}
+//getFriens(5);
+
+/*Получить список всех друзей выбранного пользователя по ID. - check
 
 
-if(isset($_POST['page']) && $_POST['page'] == 'add_friend') {
-	addFriend($_POST['current_user'], $_POST['user_id'], $conn);
-}
+Получить список всех пользователей. - check
 
+Получить список всех сообщений пользователя по ID. - check*/
