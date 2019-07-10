@@ -20,7 +20,7 @@
     <div class="header">
         <img class="header-icon back" src="img/back.svg " alt="back-icon">
         <span class='page-title'>INBOX LIST</span>
-        <input placeholder="Search" class="search-input" />
+        <input placeholder="Search" class="search-input"/>
         <img class="header-icon search" src="img/search.svg " alt="back-icon">
     </div>
 
@@ -34,17 +34,21 @@
     </div>
 
     <div class="content">
-                    <div class="dialog">
-                        <img class="dialog-avatar" src="https://s3.amazonaws.com/charitycdn/cache/resizedcrop-67a71d78433132a83a1a4e370a273914-800x800.jpg">
-                        <div class="text-block">
-                            <div class="title-block">
-                                <b class="dialog-title">здесь будут персональные настройки</b>
-                                <span class="no-read-msg-indicator">v</span>
-                            </div>
-                            <span class="dialog-last-msg">и здесь тоже будут настройки</span>
-                        </div>
-                        <span class="dialog-time">20:02</span>
+        <div class="dialog">
+            <img class="dialog-avatar"
+                 src="https://s3.amazonaws.com/charitycdn/cache/resizedcrop-67a71d78433132a83a1a4e370a273914-800x800.jpg">
+            <div class="text-block">
+                <form method="get" action="http://15home/chat/api/users.php">
+                    <div class="title-block">
+                        <b class="dialog-title"> Name:<input type="text" placeholder="изменить имя" name="name"></b>
+                        <input type="submit">
+                        <span class="no-read-msg-indicator">v</span>
                     </div>
+                    <span class="dialog-last-msg">Password<input type="text" placeholder="изменить пароль" name="pass"></span>
+                </form>
+            </div>
+            <span class="dialog-time">20:02</span>
+        </div>
     </div>
 
     <div class="footer">
@@ -70,7 +74,7 @@
     </div>
 </div>
 <script type="text/javascript" src="cordova.js"></script>
-<script type="text/javascript" src="js/personal.js"></script>
+<!--<script type="text/javascript" src="js/personal.js"></script>-->
 
 </body>
 </html>

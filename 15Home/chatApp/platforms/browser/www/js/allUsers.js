@@ -42,12 +42,11 @@ function readUsers() {
     var xml = new XMLHttpRequest();
     xml.open("POST", "http://15home/chat/api/users.php", false);
     xml.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-    xml.send("page = getAllUsers");
+    xml.send("page=getAllUsers");
     // console.log(xml);
     var userXml = JSON.parse(xml.response);
     for (var i = 0; i < userXml.users.length; i++) {
         drawUsers(userXml.users[i]);
-        // console.log(userXml.users[i]);
     }
 }
 

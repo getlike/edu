@@ -19,7 +19,7 @@ function getLastMessage($user_id, $conn)
 
 }
 
-getAllUsers($conn);//без этого не работает О_О люблю php (срказьм)
+//getAllUsers($conn);//без этого не работает О_О люблю php (срказьм)
 function getAllUsers($conn)
 {
     $sql = "SELECT * FROM users";
@@ -142,6 +142,7 @@ function searchUser($text, $conn)
     echo json_encode(["users" => $users]);
 }
 
+
 function addFriend($current_user, $user_id, $conn)
 {
     $sql = "INSERT INTO `friends` (`user_1`, `user_2`, `status`) VALUES ('$current_user', '$user_id', 'true')";
@@ -151,6 +152,12 @@ function addFriend($current_user, $user_id, $conn)
     } else {
         echo json_encode(["status" => "error"]);
     }
+}
+//updateData('qwerty','123456',$conn);
+function updateData($name,$pass,$conn){
+    $sql="UPDATE users SET `username` = '".$name."', `password` = '".$pass."' WHERE `users`.`id` = 5;";
+    $conn->query($sql);
+    echo 'Данные обновлены <a href="#" OnClick="history.back();">Назад</a>';
 }
 
 /*
@@ -177,6 +184,9 @@ if (isset($_POST['page']) && $_POST['page'] == 'getAllMessage') {
 }
 if (isset($_POST['page']) && $_POST['page'] == 'getAllUsers') {
     getAllUsers($conn);
+}
+if (isset($_GET['pass']) ) {
+    updateData($_GET['name'],$_GET['pass'],$conn);
 }
 if (isset($_POST['page']) && $_POST['page'] == 'writeMessage') {
     $fd = fopen("error.txt", 'w') or die("не удалось создать файл");

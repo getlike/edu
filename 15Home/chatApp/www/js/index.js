@@ -59,7 +59,7 @@ var app = {
         var xml = new XMLHttpRequest();
         xml.open("GET", 'http://15home/chat/api/users.php?current_user=5&page=friends', false);
         xml.send();
-
+        console.log(xml);
         var users = JSON.parse(xml.response);
 
         for (var i = 0; i < users.friends.length; i++) {
