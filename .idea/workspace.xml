@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fb836b4-4023-4097-b96b-2662253e39a5" name="Default Changelist" comment="Default Changelist">
-      <change afterPath="$PROJECT_DIR$/oak-v2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oak-v2Old" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oak-v2bac" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15Home/chat/api/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/15Home/chat/api/users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15Home/chatApp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/15Home/chatApp/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15Home/chatApp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/15Home/chatApp/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15Home/chatApp/platforms/browser/www/js/allUsers.js" beforeDir="false" afterPath="$PROJECT_DIR$/15Home/chatApp/platforms/browser/www/js/allUsers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15Home/chatApp/platforms/browser/www/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/15Home/chatApp/platforms/browser/www/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15Home/chatApp/platforms/browser/www/js/personal.js" beforeDir="false" afterPath="$PROJECT_DIR$/15Home/chatApp/platforms/browser/www/js/personal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15Home/chatApp/platforms/browser/www/personal.html" beforeDir="false" afterPath="$PROJECT_DIR$/15Home/chatApp/platforms/browser/www/personal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15Home/chatApp/www/js/allUsers.js" beforeDir="false" afterPath="$PROJECT_DIR$/15Home/chatApp/www/js/allUsers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15Home/chatApp/www/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/15Home/chatApp/www/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15Home/chatApp/www/js/personal.js" beforeDir="false" afterPath="$PROJECT_DIR$/15Home/chatApp/www/js/personal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15Home/chatApp/www/personal.html" beforeDir="false" afterPath="$PROJECT_DIR$/15Home/chatApp/www/personal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/15Online/chat/chatApp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/15Online/chat/chatApp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oak-v2Old" beforeDir="false" afterPath="$PROJECT_DIR$/oak-v2Old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oak-v2bac" beforeDir="false" afterPath="$PROJECT_DIR$/oak-v2bac" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -95,6 +82,9 @@
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -2167,6 +2157,11 @@
               <item name="edu" type="b2602c69:ProjectViewProjectNode" />
               <item name="edu" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="edu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="17Home" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -2325,7 +2320,7 @@
       <workItem from="1562046503105" duration="50000" />
       <workItem from="1562148147684" duration="110000" />
       <workItem from="1562148294139" duration="3706000" />
-      <workItem from="1562740090711" duration="1358000" />
+      <workItem from="1562740090711" duration="2774000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist&#10;Сашка поправил move()">
       <created>1558692999009</created>
@@ -2607,11 +2602,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561905176818</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Default Changelist">
+      <created>1562744715211</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1562744715212</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="507191000" />
+    <option name="totallyTimeSpent" value="508607000" />
   </component>
   <component name="TodoView" selected-index="5">
     <todo-panel id="selected-file">
@@ -2625,10 +2627,10 @@
   <component name="ToolWindowManager">
     <frame x="-1284" y="-104" width="1288" height="1032" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.4986339" visible="true" weight="0.16235864" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.4986339" visible="true" weight="0.21890146" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="11" sideWeight="0.50080776" side_tool="true" visible="true" weight="0.11050328" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50080776" side_tool="true" visible="true" weight="0.11050328" />
       <window_info anchor="right" id="Database" order="3" weight="0.22654584" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32843137" />
@@ -2916,6 +2918,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="53" column="54" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="54" />
+          <folding>
+            <element signature="n#!!block;n#drowMessage#0" />
+            <element signature="n#!!block;n#$_GET#0" />
+          </folding>
         </state>
       </provider>
     </entry>
