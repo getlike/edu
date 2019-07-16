@@ -1,8 +1,115 @@
-@import "setings.scss";
+@import "setings";
 
-header{
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
   width: 100%;
   height: 280px;
   background-image: $headerBacground;
-  
+  @extend %flex;
+  align-items: center;
+  img {
+    margin-bottom: 100px;
+  }
+
 }
+
+section.menu {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.1);
+
+  width: 100%;
+  height: 18px;
+  padding: 15px 0 30px 0;
+  @extend %flex;
+
+
+  ul {
+    width: 443px;
+    @extend %ul;
+    @extend %flex;
+    justify-content: space-between;
+    font-family: $generalFont;
+    padding-top: 10px;
+    transition: 0.1s;
+    height: 22px;
+
+    li {
+      cursor: pointer;
+
+      &:hover {
+        color: #2E64E6;
+      }
+    }
+  }
+}
+section.thumbnails{
+
+  padding-top: 20px;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  height: 500px;
+  font-family: $generalFont;
+
+  .general-thumbnails{
+    @include getWidth($marginRirght);
+    height: 100%;
+    margin-right: $marginRirght;
+
+    .thumbnails-item {
+      height: 100%;
+      background-image: $generalThumb;
+      @extend %thumbnails-item;
+    }
+  }
+  .sider-thumbnails{
+
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .thumbnails-item {
+      width: 360px;
+      height: 230px;
+      background-image: $lowThumb;
+      @extend %thumbnails-item;
+    }
+
+  }
+
+}
+section.mythumb{
+  padding-top: 20px;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  height: 500px;
+  font-family: $generalFont;
+  display: flex;
+  justify-content: space-between;
+
+  .news{
+    @include getWidth($marginRirght);
+    height: 100%;
+    margin-right:   $marginRirght;
+    border: 1px solid blue;
+    .imageNews{
+      background-image: ;
+    }
+
+  }
+
+  .categories{
+    width: 360px;
+    height: 230px;
+    @extend %thumbnails-item;
+    border: 1px solid blue;
+
+  }
+}
+

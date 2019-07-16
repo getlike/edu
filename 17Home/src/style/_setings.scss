@@ -2,11 +2,40 @@
 @import "https://fonts.googleapis.com/css?family=Poppins&display=swap";
 
 
-$generalFont : "Poppins", seans-serif;
+$generalFont: "Poppins", seans-serif;
+//general thumb
+$marginRirght: 13%;
 
-$headerBacground: url("./../static/head.png");
+$headerBacground: url("./../../build/static/head.png");
+//верхние тубочки
+$generalThumb: url('./../../build/static/thumb.png');
+$lowThumb: url('./../../build/static/lowThumb.png');
+$heightThumb: url('./../../build/static/heightThumb.png');
 
-body{
+%flex {
+
+  display: flex;
+  justify-content: center;
+}
+
+%ul {
+  list-style: none;
   margin: 0;
-  padding: 10%;
+  padding: 0;
+
+}
+
+%thumbnails-item {
+  color: #ffffff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+}
+
+.selected {
+  border-bottom: 2px solid #2E64E6;
+}
+@mixin getWidth($margin){
+  width: 70%-$margin ;
 }

@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4fb836b4-4023-4097-b96b-2662253e39a5" name="Default Changelist" comment="Default Changelist">
-      <change afterPath="$PROJECT_DIR$/17Home/build/style/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17Home/src/static/head.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17Home/src/static/typelogo-15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17Home/src/style/_setings.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="4fb836b4-4023-4097-b96b-2662253e39a5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/17Home/src/static/heightThumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17Home/src/static/lowThumb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17Home/src/static/thumb.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/17Home/build/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/17Home/build/style/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/17Home/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/17Home/gulpfile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/17Home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/17Home/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/17Home/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/17Home/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/17Home/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/17Home/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/17Home/src/script/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/17Home/src/script/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/17Home/src/style/_setings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/17Home/src/style/_setings.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/17Home/src/style/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/17Home/src/style/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oak-v2Old" beforeDir="false" afterPath="$PROJECT_DIR$/oak-v2Old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oak-v2Old/media/images/askania.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oak-v2Old/media/js/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/oak-v2Old/media/js/list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oak-v2Old/templates/addPlace.php" beforeDir="false" afterPath="$PROJECT_DIR$/oak-v2Old/templates/addPlace.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oak-v2bac" beforeDir="false" afterPath="$PROJECT_DIR$/oak-v2bac" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oak-v2bac/media/images/askania.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oak-v2bac/media/js/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/oak-v2bac/media/js/list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oak-v2bac/templates/addPlace.php" beforeDir="false" afterPath="$PROJECT_DIR$/oak-v2bac/templates/addPlace.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -47,44 +42,61 @@
     <favorites_list name="edu" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/17Home/gulpfile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/17Home/src/style/main.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/17Home/src/style/_setings.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="16" selection-start-line="6" selection-end-line="6" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/17Home/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/17Home/src/style/_setings.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                  <caret line="15" selection-start-line="15" selection-end-line="15" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/17Home/gulpfile.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="238">
+                  <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/17Home/src/script/main.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="302">
+                  <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/17Home/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="433">
+                  <caret line="41" column="29" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="29" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/17Home/src/style/main.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="440">
+                  <caret line="101" column="24" selection-start-line="101" selection-start-column="24" selection-end-line="101" selection-end-column="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -97,8 +109,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>passw</find>
-      <find>passwor</find>
       <find>action</find>
       <find>registra</find>
       <find>action/newMessag</find>
@@ -127,6 +137,8 @@
       <find>friends</find>
       <find>getA</find>
       <find>[i]</find>
+      <find>scripts</find>
+      <find>top</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -185,10 +197,10 @@
         <option value="$PROJECT_DIR$/15Home/chatApp/www/personal.html" />
         <option value="$PROJECT_DIR$/Lite_MVC/config/db.php" />
         <option value="$PROJECT_DIR$/17Home/src/script/main.js" />
-        <option value="$PROJECT_DIR$/17Home/gulpfile.js" />
-        <option value="$PROJECT_DIR$/17Home/build/style/main.css" />
-        <option value="$PROJECT_DIR$/17Home/index.html" />
         <option value="$PROJECT_DIR$/17Home/src/style/_setings.scss" />
+        <option value="$PROJECT_DIR$/17Home/build/style/main.css" />
+        <option value="$PROJECT_DIR$/17Home/gulpfile.js" />
+        <option value="$PROJECT_DIR$/17Home/index.html" />
         <option value="$PROJECT_DIR$/17Home/src/style/main.scss" />
       </list>
     </option>
@@ -201,10 +213,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="948" />
-    <option name="y" value="77" />
-    <option name="width" value="1440" />
-    <option name="height" value="780" />
+    <option name="x" value="960" />
+    <option name="width" value="960" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -230,6 +241,19 @@
               <item name="edu" type="b2602c69:ProjectViewProjectNode" />
               <item name="edu" type="462c0819:PsiDirectoryNode" />
               <item name="17Home" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="17Home" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="style" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edu" type="462c0819:PsiDirectoryNode" />
+              <item name="17Home" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -238,13 +262,6 @@
               <item name="17Home" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edu" type="462c0819:PsiDirectoryNode" />
-              <item name="17Home" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="style" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -270,19 +287,19 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Greenfly\Dropbox\edu\15Home\chatApp\www" />
-      <recent name="C:\Users\Greenfly\Dropbox\edu\15Home" />
-      <recent name="C:\Users\Greenfly\Dropbox\edu\15Home\back" />
-      <recent name="C:\Users\Greenfly\Dropbox\edu\12home\chatApp\actions" />
-      <recent name="C:\Users\Greenfly\Dropbox\edu\chat\server" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Greenfly\Dropbox\edu\17Home\src\static" />
       <recent name="G:\Dropbox\edu\17Home\src\style" />
       <recent name="G:\Dropbox\edu\17Home\src" />
       <recent name="C:\Users\Greenfly\Dropbox\edu\15Home\chatApp\www" />
       <recent name="C:\Users\Greenfly\Dropbox\edu\14home" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Greenfly\Dropbox\edu\15Home\chatApp\www" />
+      <recent name="C:\Users\Greenfly\Dropbox\edu\15Home" />
+      <recent name="C:\Users\Greenfly\Dropbox\edu\15Home\back" />
+      <recent name="C:\Users\Greenfly\Dropbox\edu\12home\chatApp\actions" />
+      <recent name="C:\Users\Greenfly\Dropbox\edu\chat\server" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -424,6 +441,7 @@
       <workItem from="1562822188200" duration="4245000" />
       <workItem from="1562854059226" duration="2160000" />
       <workItem from="1563005334866" duration="758000" />
+      <workItem from="1563246917534" duration="21617000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist&#10;Сашка поправил move()">
       <created>1558692999009</created>
@@ -740,11 +758,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562766154032</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Default Changelist">
+      <created>1563247098125</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1563247098126</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="522695000" />
+    <option name="totallyTimeSpent" value="544312000" />
   </component>
   <component name="TodoView" selected-index="5">
     <todo-panel id="selected-file">
@@ -757,10 +782,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" sideWeight="0.504886" side_tool="true" weight="0.22213247" />
       <window_info id="Favorites" order="1" sideWeight="0.50136614" side_tool="true" weight="0.195629" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.495114" visible="true" weight="0.23347548" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.495114" visible="true" weight="0.14232409" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49919224" weight="0.13457331" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.33006537" />
@@ -770,7 +796,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32843137" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4983845" visible="true" weight="0.2611051" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4983845" visible="true" weight="0.16576381" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.4983845" weight="0.32822758" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50080776" side_tool="true" weight="0.13457331" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -885,23 +911,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/13chat/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="5" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/13chat/admin-panel/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/13chat/admin-panel/modules/users/create.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/13chat/admin-panel/modules/users/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
@@ -1090,37 +1099,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/17Home/src/static/heightThumb.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/17Home/src/static/lowThumb.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/17Home/src/static/thumb.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/17Home/src/script/main.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/17Home/build/style/main.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/17Home/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="302">
+          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/17Home/src/style/_setings.scss">
+    <entry file="file://$PROJECT_DIR$/17Home/build/style/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="16" selection-start-line="6" selection-end-line="6" selection-end-column="16" />
+        <state>
+          <caret column="1802" selection-start-column="1802" selection-end-column="1802" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/17Home/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/17Home/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        <state relative-caret-position="433">
+          <caret line="41" column="29" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/17Home/src/style/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        <state relative-caret-position="440">
+          <caret line="101" column="24" selection-start-line="101" selection-start-column="24" selection-end-line="101" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/17Home/src/style/_setings.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
