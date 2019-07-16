@@ -12,4 +12,10 @@ function styles() {
 
     )
 }
-gulp.task("compilateSCSS",styles)
+function watch(){
+    gulp.watch('./src/style/**/*.scss', styles);
+
+}
+
+gulp.task("compilateSCSS",styles);
+gulp.task("watch",watch);

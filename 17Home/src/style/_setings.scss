@@ -1,0 +1,12 @@
+@charset "UTF-8";
+@import "https://fonts.googleapis.com/css?family=Poppins&display=swap";
+
+
+$generalFont : "Poppins", seans-serif;
+
+$headerBacground: url("./../static/head.png");
+
+body{
+  margin: 0;
+  padding: 10%;
+}

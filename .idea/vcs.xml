@@ -2,5 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/oak-v2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/oak-v2Old" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/oak-v2bac" vcs="Git" />
   </component>
 </project>
