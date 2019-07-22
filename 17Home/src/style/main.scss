@@ -11,6 +11,7 @@ header {
   background-image: $headerBacground;
   @extend %flex;
   align-items: center;
+
   img {
     margin-bottom: 100px;
   }
@@ -46,7 +47,8 @@ section.menu {
     }
   }
 }
-section.thumbnails{
+
+section.thumbnails {
 
   padding-top: 20px;
   width: 60%;
@@ -55,7 +57,7 @@ section.thumbnails{
   height: 500px;
   font-family: $generalFont;
 
-  .general-thumbnails{
+  .general-thumbnails {
     @include getWidth($marginRirght);
     height: 100%;
     margin-right: $marginRirght;
@@ -66,13 +68,15 @@ section.thumbnails{
       @extend %thumbnails-item;
     }
   }
-  .sider-thumbnails{
+
+  .sider-thumbnails {
 
     width: 30%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     .thumbnails-item {
       width: 360px;
       height: 230px;
@@ -83,33 +87,78 @@ section.thumbnails{
   }
 
 }
-section.mythumb{
-  padding-top: 20px;
+
+section.mythumb {
   width: 60%;
   margin: auto;
   display: flex;
-  height: 500px;
+  flex-direction: row;
   font-family: $generalFont;
-  display: flex;
-  justify-content: space-between;
 
-  .news{
-    @include getWidth($marginRirght);
-    height: 100%;
-    margin-right:   $marginRirght;
-    border: 1px solid blue;
-    .imageNews{
-      background-image: ;
+
+  .news {
+    margin-top: 20px;
+    padding: 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+
+    .thumbNews {
+      width: 60%;
+      border: 1px solid red;
+
+
+      .imageNews {
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        border: 1px solid green;
+
+
+      }
+
+      .textNews {
+        //flex-direction: row;
+        padding-left: 10px;
+        margin: 0;
+
+      }
+    }
+  }
+
+  .categories {
+
+    .gni-liniyu{
+      flex-direction: row;
+
+
+
+      b{
+        &:last-child{
+        }
+      };
+
     }
 
+    ul {
+      @extend %ul;
+
+      li {
+        border-bottom: 2px solid #999999;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+
+    }
+
+    margin-top: 20px;
+    width: 67%;
+    display: block;
+
   }
 
-  .categories{
-    width: 360px;
-    height: 230px;
-    @extend %thumbnails-item;
-    border: 1px solid blue;
-
-  }
 }
-

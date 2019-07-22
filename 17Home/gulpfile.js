@@ -66,4 +66,5 @@ function watch() {
 }
 
 gulp.task("compilateSCSS", styles);
+gulp.task("images", images);
 gulp.task("watch", watch);
